@@ -1,0 +1,11 @@
+D:\BaoHiemTDT\BaoHiemTDT\bin\Debug\Data\BaoHiemTDT.mdf
+D:\BaoHiemTDT\BaoHiemTDT\bin\Debug\Data\BaoHiemTDT_log.ldf
+D:\BaoHiemTDT\BaoHiemTDT\bin\Debug\BaoHiemTDT.exe.config
+D:\BaoHiemTDT\BaoHiemTDT\bin\Debug\BaoHiemTDT.exe
+D:\BaoHiemTDT\BaoHiemTDT\bin\Debug\BaoHiemTDT.pdb
+D:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csprojResolveAssemblyReference.cache
+D:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Properties.Resources.resources
+D:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csproj.GenerateResource.Cache
+D:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.exe
+D:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.pdb
+D:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmLogin.resources
