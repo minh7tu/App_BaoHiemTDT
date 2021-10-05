@@ -1,4 +1,5 @@
 ﻿using BaoHiemTDT.Feature;
+using BaoHiemTDT.Master;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace BaoHiemTDT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            Application.Run(new frmMaster());
         }
     }
 }
