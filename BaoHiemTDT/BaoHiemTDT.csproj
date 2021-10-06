@@ -67,11 +67,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BaoHiemTDT_DataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Feature\Test.cs">
+    <Compile Include="Feature\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Feature\Test.Designer.cs">
-      <DependentUpon>Test.cs</DependentUpon>
+    <Compile Include="Feature\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Master\frmMaster.cs">
       <SubType>Form</SubType>
