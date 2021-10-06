@@ -9,3 +9,4 @@ D:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csproj.GenerateResource.Cache
 D:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.exe
 D:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.pdb
 D:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Master.frmMaster.resources
+D:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmLogin.resources

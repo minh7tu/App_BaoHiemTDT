@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BaoHiemTDT.Feature;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,9 @@ namespace BaoHiemTDT.Master
 {
     public partial class frmMaster : Form
     {
+        //Field
+        private Form activeForm;
+
         public frmMaster()
         {
             InitializeComponent();
@@ -19,10 +23,12 @@ namespace BaoHiemTDT.Master
 
         private void frmMaster_Load(object sender, EventArgs e)
         {
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;//Loại bỏ đường viền của Form
+            //Loại bỏ đường viền của Form
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.ControlBox = false;
             this.Text = "";
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+            this.notify.ContextMenuStrip = this.contextMenuStrip;
         }
 
         [DllImport("user32.DLL",EntryPoint="ReleaseCapture")]
@@ -37,24 +43,70 @@ namespace BaoHiemTDT.Master
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
+        //Đóng form
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();//Đóng form
+            Application.Exit();
         }
-
+        //Restore form
         private void btnMaximize_Click_1(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
                 this.WindowState = FormWindowState.Maximized;
             else 
                 this.WindowState = FormWindowState.Normal;
-
         }
-
+        //Minize form
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+        //Đóng form
+        private void tSMItemClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+        //Mở 1 form
+        private void openChildForm(Form childForm , object btnSender)
+        {
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+            ActivateButton(btnSender);
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            this.paneChild.Controls.Add(childForm);
+            this.paneChild.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
+        private void ActivateButton(object btnSender)
+        {
+         
+        }
+        //Kích đúp đăng xuất
+        private void tSMItemLogin_Click(object sender, EventArgs e)
+        {
+
+        }
+        //Xem thông tin khách , đóng form hiện tại
+        private void btnCustomer_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmCustomer(), sender);
+        }
+        //Chọn product , đóng form hiện tại
+        private void btnProduct_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmProduct(), sender);
+        }
+        //Đăng xuất , đóng form hiện tại
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmLogin(), sender);
         }
         
     }
