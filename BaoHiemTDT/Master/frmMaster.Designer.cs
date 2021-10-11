@@ -75,8 +75,9 @@
             this.btnLogin.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowText;
             this.btnLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(0, 496);
+            this.btnLogin.Location = new System.Drawing.Point(0, 480);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(200, 65);
             this.btnLogin.TabIndex = 4;
@@ -97,18 +98,19 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 561);
+            this.panel1.Size = new System.Drawing.Size(200, 545);
             this.panel1.TabIndex = 5;
             // 
             // lblName
             // 
             this.lblName.AutoSize = true;
             this.lblName.BackColor = System.Drawing.Color.White;
+            this.lblName.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.SystemColors.ControlText;
             this.lblName.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblName.Location = new System.Drawing.Point(48, 9);
+            this.lblName.Location = new System.Drawing.Point(48, 5);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(49, 13);
+            this.lblName.Size = new System.Drawing.Size(72, 21);
             this.lblName.TabIndex = 8;
             this.lblName.Text = "Xin chào";
             this.lblName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -129,6 +131,7 @@
             this.btnProduct.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowText;
             this.btnProduct.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProduct.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProduct.ForeColor = System.Drawing.Color.White;
             this.btnProduct.Location = new System.Drawing.Point(0, 245);
             this.btnProduct.Name = "btnProduct";
@@ -142,9 +145,10 @@
             // 
             this.btnCustomer.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnCustomer.FlatAppearance.BorderSize = 0;
-            this.btnCustomer.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.WindowText;
+            this.btnCustomer.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.btnCustomer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
             this.btnCustomer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCustomer.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomer.ForeColor = System.Drawing.Color.White;
             this.btnCustomer.Location = new System.Drawing.Point(0, 180);
             this.btnCustomer.Name = "btnCustomer";
@@ -182,37 +186,48 @@
             // btnMinimize
             // 
             this.btnMinimize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMinimize.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMinimize.Location = new System.Drawing.Point(594, 0);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(30, 30);
             this.btnMinimize.TabIndex = 9;
-            this.btnMinimize.Text = "x";
+            this.btnMinimize.Text = "—";
+            this.btnMinimize.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMinimize.UseVisualStyleBackColor = true;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // btnMaximize
             // 
             this.btnMaximize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnMaximize.FlatAppearance.BorderSize = 0;
+            this.btnMaximize.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.btnMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMaximize.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMaximize.Location = new System.Drawing.Point(624, 0);
             this.btnMaximize.Name = "btnMaximize";
             this.btnMaximize.Size = new System.Drawing.Size(30, 30);
             this.btnMaximize.TabIndex = 8;
-            this.btnMaximize.Text = "x";
+            this.btnMaximize.Text = "▭";
             this.btnMaximize.UseVisualStyleBackColor = true;
             this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click_1);
             // 
             // btnExit
             // 
             this.btnExit.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Location = new System.Drawing.Point(654, 0);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(3, 3, 5, 3);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(30, 30);
             this.btnExit.TabIndex = 7;
             this.btnExit.Text = "x";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // notify
@@ -245,10 +260,11 @@
             // 
             // paneChild
             // 
+            this.paneChild.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.paneChild.Dock = System.Windows.Forms.DockStyle.Fill;
             this.paneChild.Location = new System.Drawing.Point(200, 30);
             this.paneChild.Name = "paneChild";
-            this.paneChild.Size = new System.Drawing.Size(684, 531);
+            this.paneChild.Size = new System.Drawing.Size(684, 515);
             this.paneChild.TabIndex = 7;
             // 
             // frmMaster
@@ -257,7 +273,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(884, 561);
+            this.ClientSize = new System.Drawing.Size(884, 545);
             this.Controls.Add(this.paneChild);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);

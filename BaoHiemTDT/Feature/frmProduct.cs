@@ -15,5 +15,10 @@ namespace BaoHiemTDT.Feature
         {
             InitializeComponent();
         }
+
+        private void frmProduct_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
