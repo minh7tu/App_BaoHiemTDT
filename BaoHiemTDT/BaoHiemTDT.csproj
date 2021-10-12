@@ -67,6 +67,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BaoHiemTDT_DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Feature\frmCommerce.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feature\frmCommerce.Designer.cs">
+      <DependentUpon>frmCommerce.cs</DependentUpon>
+    </Compile>
     <Compile Include="Feature\frmCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Feature\frmCustomer.resx">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feature\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Feature\frmProduct.resx">
       <DependentUpon>frmProduct.cs</DependentUpon>
     </EmbeddedResource>
