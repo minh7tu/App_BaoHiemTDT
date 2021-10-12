@@ -91,12 +91,6 @@
     <Compile Include="Feature\frmProduct.Designer.cs">
       <DependentUpon>frmProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="Feature\frmRegister.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Feature\frmRegister.Designer.cs">
-      <DependentUpon>frmRegister.cs</DependentUpon>
-    </Compile>
     <Compile Include="Master\frmMaster.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,9 +99,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Feature\frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Feature\frmProduct.resx">
       <DependentUpon>frmProduct.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,7 +146,11 @@
       <DependentUpon>BaoHiemTDT.mdf</DependentUpon>
     </Content>
     <Content Include="Image\close.jpg" />
-    <None Include="Image\cÔNG TY CỔ PHẦN BẢO HIỂM.png" />
+    <Content Include="Image\user-icon-vector-people-profile-person-illustration-business-users-group-symbol-male-195160429.jpg" />
+    <Content Include="Image\user.png" />
+    <Content Include="Image\user_icon_150670.png" />
+    <None Include="Image\logo-login.png" />
+    <Content Include="Image\lock.png" />
     <Content Include="Image\logo_title.ico" />
     <Content Include="Image\logo_title.jpg" />
     <Content Include="Image\maximize.jpg" />
