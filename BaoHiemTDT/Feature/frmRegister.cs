@@ -7,13 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace BaoHiemTDT.Feature
+namespace Login
 {
     public partial class frmRegister : Form
     {
         public frmRegister()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
