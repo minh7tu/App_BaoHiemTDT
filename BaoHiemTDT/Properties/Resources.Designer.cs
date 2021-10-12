@@ -59,15 +59,5 @@ namespace BaoHiemTDT.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap cÔNG_TY_CỔ_PHẦN_BẢO_HIỂM {
-            get {
-                object obj = ResourceManager.GetObject("cÔNG TY CỔ PHẦN BẢO HIỂM", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
