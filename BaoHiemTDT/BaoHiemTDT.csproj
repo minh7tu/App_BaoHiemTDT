@@ -122,6 +122,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="app.config" />
     <None Include="Data\BaoHiemTDT_DataSet.xsc">
@@ -154,6 +155,7 @@
       <DependentUpon>BaoHiemTDT.mdf</DependentUpon>
     </Content>
     <Content Include="Image\close.jpg" />
+    <None Include="Image\cÔNG TY CỔ PHẦN BẢO HIỂM.png" />
     <Content Include="Image\logo_title.ico" />
     <Content Include="Image\logo_title.jpg" />
     <Content Include="Image\maximize.jpg" />

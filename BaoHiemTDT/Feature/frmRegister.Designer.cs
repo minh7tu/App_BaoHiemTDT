@@ -43,7 +43,7 @@ namespace Login
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Login.Properties.Resources.cÔNG_TY_CỔ_PHẦN_BẢO_HIỂM;
+            
             this.pictureBox1.Location = new System.Drawing.Point(186, -50);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(419, 297);
