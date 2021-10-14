@@ -18,9 +18,10 @@ namespace BaoHiemTDT.Master
         private Form activeForm;
         private Thread th;
 
-        public frmMaster()
+        public frmMaster(string username)
         {
             InitializeComponent();
+            lblName.Text +=" " + username;
         }
 
         private void frmMaster_Load(object sender, EventArgs e)
@@ -31,6 +32,8 @@ namespace BaoHiemTDT.Master
             this.Text = "";
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.notify.ContextMenuStrip = this.contextMenuStrip;
+
+            
         }
 
         [DllImport("user32.DLL",EntryPoint="ReleaseCapture")]
@@ -54,9 +57,15 @@ namespace BaoHiemTDT.Master
         private void btnMaximize_Click_1(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
+            {
                 this.WindowState = FormWindowState.Maximized;
-            else 
+                btnMaximize.Text = "☐";
+            }
+            else
+            {
                 this.WindowState = FormWindowState.Normal;
+                btnMaximize.Text = "❐";
+            }
         }
         //Minize form
         private void btnMinimize_Click(object sender, EventArgs e)
@@ -93,7 +102,7 @@ namespace BaoHiemTDT.Master
         //Kích đúp đăng xuất
         private void tSMItemLogin_Click(object sender, EventArgs e)
         {
-
+            btnLogin_Click(sender, e);
         }
         //Xem thông tin khách , đóng form hiện tại
         private void btnCustomer_Click(object sender, EventArgs e)
@@ -117,6 +126,5 @@ namespace BaoHiemTDT.Master
         {
             Application.Run(new frmLogin());
         }
-
     }
 }

@@ -14,6 +14,7 @@ namespace BaoHiemTDT.Feature
     public partial class frmLogin : Form
     {
         Thread th;
+        string username;
 
         public frmLogin()
         {
@@ -62,7 +63,9 @@ namespace BaoHiemTDT.Feature
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            if (txtTaiKhoan.Text == "admin" && txtMatKhau.Text == "admin")
+            username = txtTaiKhoan.Text;//Gan username bang textbox tai khoan
+
+            if (txtTaiKhoan.Text == "minhtu" && txtMatKhau.Text == "123")
             {
                 this.Close_Open();
             }
@@ -73,7 +76,7 @@ namespace BaoHiemTDT.Feature
                 txtMatKhau.Clear();
                 txtTaiKhoan.Focus();
             }
-            
+           
         }
 
         private void Close_Open()
@@ -86,7 +89,7 @@ namespace BaoHiemTDT.Feature
         private void openNewFrom()
         {
             
-                Application.Run(new frmMaster());
+                Application.Run(new frmMaster(username));
             
         }
 
