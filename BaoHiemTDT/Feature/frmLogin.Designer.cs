@@ -38,27 +38,34 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(224, 180);
+            this.label1.Location = new System.Drawing.Point(168, 207);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 35);
+            this.label1.Size = new System.Drawing.Size(155, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "ĐĂNG NHẬP";
             // 
             // txtTaiKhoan
             // 
             this.txtTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTaiKhoan.Location = new System.Drawing.Point(212, 274);
+            this.txtTaiKhoan.Location = new System.Drawing.Point(206, 290);
+            this.txtTaiKhoan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTaiKhoan.Name = "txtTaiKhoan";
-            this.txtTaiKhoan.Size = new System.Drawing.Size(225, 27);
+            this.txtTaiKhoan.Size = new System.Drawing.Size(170, 23);
             this.txtTaiKhoan.TabIndex = 1;
             this.txtTaiKhoan.Text = "Tài khoản";
             this.txtTaiKhoan.Enter += new System.EventHandler(this.txtTaiKhoan_Enter);
@@ -67,10 +74,11 @@
             // txtMatKhau
             // 
             this.txtMatKhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMatKhau.Location = new System.Drawing.Point(212, 373);
+            this.txtMatKhau.Location = new System.Drawing.Point(206, 352);
+            this.txtMatKhau.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PasswordChar = '*';
-            this.txtMatKhau.Size = new System.Drawing.Size(225, 27);
+            this.txtMatKhau.Size = new System.Drawing.Size(170, 23);
             this.txtMatKhau.TabIndex = 2;
             this.txtMatKhau.Enter += new System.EventHandler(this.txtMatKhau_Enter);
             this.txtMatKhau.Leave += new System.EventHandler(this.txtMatKhau_Leave);
@@ -79,9 +87,10 @@
             // 
             this.liblQuenMK.AutoSize = true;
             this.liblQuenMK.LinkColor = System.Drawing.Color.Black;
-            this.liblQuenMK.Location = new System.Drawing.Point(164, 418);
+            this.liblQuenMK.Location = new System.Drawing.Point(105, 396);
+            this.liblQuenMK.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.liblQuenMK.Name = "liblQuenMK";
-            this.liblQuenMK.Size = new System.Drawing.Size(113, 17);
+            this.liblQuenMK.Size = new System.Drawing.Size(86, 13);
             this.liblQuenMK.TabIndex = 6;
             this.liblQuenMK.TabStop = true;
             this.liblQuenMK.Text = "Quên mật khẩu?";
@@ -90,9 +99,10 @@
             // 
             this.liblTaoTaiKhoan.AutoSize = true;
             this.liblTaoTaiKhoan.LinkColor = System.Drawing.Color.Black;
-            this.liblTaoTaiKhoan.Location = new System.Drawing.Point(164, 445);
+            this.liblTaoTaiKhoan.Location = new System.Drawing.Point(105, 425);
+            this.liblTaoTaiKhoan.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.liblTaoTaiKhoan.Name = "liblTaoTaiKhoan";
-            this.liblTaoTaiKhoan.Size = new System.Drawing.Size(95, 17);
+            this.liblTaoTaiKhoan.Size = new System.Drawing.Size(73, 13);
             this.liblTaoTaiKhoan.TabIndex = 6;
             this.liblTaoTaiKhoan.TabStop = true;
             this.liblTaoTaiKhoan.Text = "Tạo tài khoản";
@@ -101,9 +111,10 @@
             // btnDangNhap
             // 
             this.btnDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.Location = new System.Drawing.Point(212, 477);
+            this.btnDangNhap.Location = new System.Drawing.Point(173, 455);
+            this.btnDangNhap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(190, 53);
+            this.btnDangNhap.Size = new System.Drawing.Size(142, 43);
             this.btnDangNhap.TabIndex = 3;
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.UseVisualStyleBackColor = true;
@@ -112,9 +123,10 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::BaoHiemTDT.Properties.Resources._lock;
-            this.pictureBox3.Location = new System.Drawing.Point(129, 350);
+            this.pictureBox3.Location = new System.Drawing.Point(103, 334);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox3.Size = new System.Drawing.Size(75, 41);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
@@ -122,9 +134,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::BaoHiemTDT.Properties.Resources.user_icon_150670;
-            this.pictureBox2.Location = new System.Drawing.Point(129, 251);
+            this.pictureBox2.Location = new System.Drawing.Point(103, 272);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox2.Size = new System.Drawing.Size(75, 41);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -132,20 +145,56 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(144, -60);
+            this.pictureBox1.Location = new System.Drawing.Point(108, 65);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(357, 337);
+            this.pictureBox1.Size = new System.Drawing.Size(268, 193);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btnExit
+            // 
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Location = new System.Drawing.Point(471, 1);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(29, 23);
+            this.btnExit.TabIndex = 7;
+            this.btnExit.Text = "x";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.pictureBox4);
+            this.panel1.Controls.Add(this.btnExit);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(500, 27);
+            this.panel1.TabIndex = 8;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(32, 27);
+            this.pictureBox4.TabIndex = 8;
+            this.pictureBox4.TabStop = false;
+            // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(239)))));
-            this.ClientSize = new System.Drawing.Size(666, 654);
+            this.ClientSize = new System.Drawing.Size(500, 531);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.liblTaoTaiKhoan);
             this.Controls.Add(this.liblQuenMK);
@@ -155,11 +204,17 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,5 +231,8 @@
         private System.Windows.Forms.LinkLabel liblQuenMK;
         private System.Windows.Forms.LinkLabel liblTaoTaiKhoan;
         private System.Windows.Forms.Button btnDangNhap;
+        private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox4;
     }
 }

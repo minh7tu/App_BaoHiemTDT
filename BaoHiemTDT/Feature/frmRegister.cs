@@ -15,5 +15,17 @@ namespace BaoHiemTDT.Feature
         {
             InitializeComponent();
         }
+
+        private void frmRegister_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+
     }
 }
