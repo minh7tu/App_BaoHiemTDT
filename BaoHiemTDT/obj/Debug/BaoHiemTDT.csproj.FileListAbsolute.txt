@@ -25,3 +25,4 @@ F:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.exe
 F:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.pdb
 F:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmCustomer.resources
 F:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmLogin.resources
+F:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmRegister.resources

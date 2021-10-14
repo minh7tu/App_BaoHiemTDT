@@ -8,6 +8,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace BaoHiemTDT.Master
 {
@@ -15,6 +16,7 @@ namespace BaoHiemTDT.Master
     {
         //Field
         private Form activeForm;
+        private Thread th;
 
         public frmMaster()
         {
@@ -106,8 +108,15 @@ namespace BaoHiemTDT.Master
         //Đăng xuất , đóng form hiện tại
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            openChildForm(new frmLogin(), sender);
+            this.Close();
+            th = new Thread(openNewFrom);
+            th.Start();
         }
-        
+
+        private void openNewFrom()
+        {
+            Application.Run(new frmLogin());
+        }
+
     }
 }

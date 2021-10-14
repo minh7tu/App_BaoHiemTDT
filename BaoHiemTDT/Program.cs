@@ -17,7 +17,7 @@ namespace BaoHiemTDT
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMaster());
+            Application.Run(new frmLogin());
         }
     }
 }
