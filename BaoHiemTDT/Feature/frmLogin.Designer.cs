@@ -93,6 +93,7 @@
             this.liblQuenMK.TabIndex = 6;
             this.liblQuenMK.TabStop = true;
             this.liblQuenMK.Text = "Quên mật khẩu?";
+            this.liblQuenMK.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.liblQuenMK_LinkClicked);
             // 
             // liblTaoTaiKhoan
             // 

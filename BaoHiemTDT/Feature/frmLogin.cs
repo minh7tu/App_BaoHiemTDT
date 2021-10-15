@@ -100,6 +100,18 @@ namespace BaoHiemTDT.Feature
             th.Start();
         }
 
+        private void Close_Open2()
+        {
+            this.Close();
+            th = new Thread(openNewFrom2);
+            th.Start();
+        }
+
+        private void openNewFrom2()
+        {
+            Application.Run(new frmForgotPassword());
+        }
+
         private void openNewFrom1()
         {
             Application.Run(new frmRegister());
@@ -118,6 +130,11 @@ namespace BaoHiemTDT.Feature
         private void btnExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void liblQuenMK_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close_Open2();
         }
     }
 }

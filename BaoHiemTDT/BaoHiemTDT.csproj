@@ -79,6 +79,12 @@
     <Compile Include="Feature\frmCustomer.Designer.cs">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Feature\frmForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feature\frmForgotPassword.Designer.cs">
+      <DependentUpon>frmForgotPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Feature\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
