@@ -79,6 +79,12 @@
     <Compile Include="Feature\frmCustomer.Designer.cs">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Feature\frmForgot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feature\frmForgot.Designer.cs">
+      <DependentUpon>frmForgot.cs</DependentUpon>
+    </Compile>
     <Compile Include="Feature\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Feature\frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feature\frmForgot.resx">
+      <DependentUpon>frmForgot.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Feature\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
