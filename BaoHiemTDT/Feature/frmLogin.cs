@@ -136,5 +136,22 @@ namespace BaoHiemTDT.Feature
         {
             this.Close_Open2();
         }
+
+        private void lilblThoat_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Close();
+        }
+        //An Hien mat khau
+        private void ckbLHienMK_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ckbLHienMK.Checked)
+            {
+                txtMatKhau.PasswordChar = '\0';
+            }
+            else
+            {
+                txtMatKhau.PasswordChar = '•';
+            }
+        }
     }
 }
