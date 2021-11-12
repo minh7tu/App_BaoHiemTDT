@@ -45,3 +45,4 @@ E:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Master.frmMaster.resources
 E:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Properties.Resources.resources
 E:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csproj.GenerateResource.Cache
 E:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmForgotPassword.resources
+D:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmForgotPassword.resources

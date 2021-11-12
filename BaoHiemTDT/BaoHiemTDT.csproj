@@ -61,7 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Config\ConfigData.cs" />
+    <Compile Include="Config\TDT.cs" />
     <Compile Include="Data\BaoHiemTDT_DataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -117,6 +117,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Feature\frmCommerce.resx">
+      <DependentUpon>frmCommerce.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Feature\frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </EmbeddedResource>
