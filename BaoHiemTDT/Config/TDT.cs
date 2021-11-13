@@ -15,14 +15,14 @@ namespace BaoHiemTDT.Config
         
         }
 
-        public void Connect()
+        public static void Connect()
         {
             string str = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Data\BaoHiemTDT.mdf;Integrated Security=True";
             connect = new SqlConnection(str);
             connect.Open();
         }
 
-        public void Close()
+        public static void Disconect()
         {
             if (connect.State == System.Data.ConnectionState.Open)
             {

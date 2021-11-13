@@ -113,7 +113,7 @@ namespace BaoHiemTDT.Feature
 
         private void btnDangKy_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void lblThoat_Click(object sender, EventArgs e)
