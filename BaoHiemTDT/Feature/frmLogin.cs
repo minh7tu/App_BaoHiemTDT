@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Threading;
+using BaoHiemTDT.Config;
+using System.Data.SqlClient;
 
 namespace BaoHiemTDT.Feature
 {
@@ -65,7 +67,30 @@ namespace BaoHiemTDT.Feature
         {
             username = txtTaiKhoan.Text;//Gan username bang textbox tai khoan
 
-            if (txtTaiKhoan.Text == "minhtu" && txtMatKhau.Text == "123")
+            try
+            {
+                TDT.Connect();
+
+            }
+            catch(Exception ee)
+            {
+                MessageBox.Show("Máy chủ đang quá tải.Vui lòng thử lại sau.");
+            }
+            string dangky = " select * FROM TAIKHOAN where TenTK = '" + txtTaiKhoan.Text + "' and MatKhau = '" + txtMatKhau.Text + "'";
+            SqlCommand scd = new SqlCommand(dangky, TDT.connect);
+            SqlDataReader sdr = scd.ExecuteReader();
+            if (sdr.Read())
+            {
+                this.Close_Open();
+                TDT.Disconect();
+            }
+            else {
+                MessageBox.Show("Tài khoản hoặc mật khẩu bạn nhập đã sai. Vui lòng nhập lại");
+                txtTaiKhoan.Clear();
+                txtMatKhau.Clear();
+                txtTaiKhoan.Focus();
+            }
+            /*if (txtTaiKhoan.Text == "minhtu" && txtMatKhau.Text == "123")
             {
                 this.Close_Open();
             }
@@ -75,7 +100,7 @@ namespace BaoHiemTDT.Feature
                 txtTaiKhoan.Clear();
                 txtMatKhau.Clear();
                 txtTaiKhoan.Focus();
-            }
+            }*/
            
         }
 
