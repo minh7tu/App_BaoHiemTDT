@@ -20,5 +20,20 @@ namespace BaoHiemTDT.Feature
         {
 
         }
+
+        private void btnComInsurance_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnStateInsurance_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnProInsurance_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
