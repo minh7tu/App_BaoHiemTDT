@@ -119,7 +119,7 @@ namespace BaoHiemTDT.Feature
                 TDT.Connect();
 
             }
-            catch (Exception ee)
+            catch
             {
                 MessageBox.Show("Máy chủ đang quá tải.Vui lòng thử lại sau.");
             }

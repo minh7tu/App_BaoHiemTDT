@@ -1,0 +1,7 @@
+#Loại bỏ file BaoHiemTDT.v11.suo
+BaoHiemTDT.v11.suo
+#Loại bỏ thư mục
+**/bin/
+**/obj/
+**/.vs/
+
