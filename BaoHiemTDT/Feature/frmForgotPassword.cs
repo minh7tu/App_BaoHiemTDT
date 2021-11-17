@@ -15,5 +15,11 @@ namespace BaoHiemTDT.Feature
         {
             InitializeComponent();
         }
+
+        private void liblForgetExit_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            new frmLogin().Show();
+            this.Hide();
+        }
     }
 }

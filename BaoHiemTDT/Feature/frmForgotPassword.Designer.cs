@@ -35,6 +35,7 @@
             this.txtForgetTK = new System.Windows.Forms.TextBox();
             this.txtForgetSDT = new System.Windows.Forms.TextBox();
             this.btnForgetCheck = new System.Windows.Forms.Button();
+            this.liblForgetExit = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,12 +100,25 @@
             this.btnForgetCheck.Text = "Kiểm tra";
             this.btnForgetCheck.UseVisualStyleBackColor = true;
             // 
+            // liblForgetExit
+            // 
+            this.liblForgetExit.AutoSize = true;
+            this.liblForgetExit.LinkColor = System.Drawing.Color.Black;
+            this.liblForgetExit.Location = new System.Drawing.Point(330, 421);
+            this.liblForgetExit.Name = "liblForgetExit";
+            this.liblForgetExit.Size = new System.Drawing.Size(45, 17);
+            this.liblForgetExit.TabIndex = 6;
+            this.liblForgetExit.TabStop = true;
+            this.liblForgetExit.Text = "Thoát";
+            this.liblForgetExit.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.liblForgetExit_LinkClicked);
+            // 
             // frmForgotPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(731, 525);
+            this.Controls.Add(this.liblForgetExit);
             this.Controls.Add(this.btnForgetCheck);
             this.Controls.Add(this.txtForgetSDT);
             this.Controls.Add(this.txtForgetTK);
@@ -113,7 +127,8 @@
             this.Controls.Add(this.lblQuenMK);
             this.Controls.Add(this.pictureBox1);
             this.Name = "frmForgotPassword";
-            this.Text = "frmForgotPassword";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Quên mật khẩu";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -129,5 +144,6 @@
         private System.Windows.Forms.TextBox txtForgetTK;
         private System.Windows.Forms.TextBox txtForgetSDT;
         private System.Windows.Forms.Button btnForgetCheck;
+        private System.Windows.Forms.LinkLabel liblForgetExit;
     }
 }

@@ -114,7 +114,28 @@ namespace BaoHiemTDT.Feature
 
         private void btnDangKy_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                TDT.Connect();
+
+            }
+            catch (Exception ee)
+            {
+                MessageBox.Show("Máy chủ đang quá tải.Vui lòng thử lại sau.");
+            }
+            //asdasda
+            string dangky = " INSERT INTO  TAIKHOAN(TenTK, MatKhau,SDT)  VALUES(" + txtRegisTK.Text + ","+txtRegisMK.Text + ","+txtRegisSDT.Text + ");";
+            dangky += " INSERT KHACHHANG(SDT) VALUES(" + txtRegisSDT.Text + ")";
+            SqlCommand scdr = new SqlCommand(dangky, TDT.connect);
+            try
+            {
+                scdr.ExecuteNonQuery();
+            }
+            catch{
+                MessageBox.Show("Đăng ký thất bại!");            
+            }
+
+        
         }
 
         private void lblThoat_Click(object sender, EventArgs e)

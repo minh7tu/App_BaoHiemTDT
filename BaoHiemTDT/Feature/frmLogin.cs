@@ -65,8 +65,8 @@ namespace BaoHiemTDT.Feature
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            username = txtTaiKhoan.Text;//Gan username bang textbox tai khoan
-
+            username = txtTaiKhoan.Text;//Gán username bằng textbox tài khoản
+            //Kiểm tra kết nối
             try
             {
                 TDT.Connect();
@@ -76,10 +76,12 @@ namespace BaoHiemTDT.Feature
             {
                 MessageBox.Show("Máy chủ đang quá tải.Vui lòng thử lại sau.");
             }
-            string dangky = " select * FROM TAIKHOAN where TenTK = '" + txtTaiKhoan.Text + "' and MatKhau = '" + txtMatKhau.Text + "'";
-            SqlCommand scd = new SqlCommand(dangky, TDT.connect);
+            //Khai báo câu lệnh truy vấn sql đọc thông tin tài khoản trong database
+
+            string dangnhap = " select * FROM TAIKHOAN where TenTK = '" + txtTaiKhoan.Text + "' and MatKhau = '" + txtMatKhau.Text + "'";
+            SqlCommand scd = new SqlCommand(dangnhap, TDT.connect);
             SqlDataReader sdr = scd.ExecuteReader();
-            if (sdr.Read())
+            if (sdr.Read())//Đọc dữ liệu trong database
             {
                 this.Close_Open();
                 TDT.Disconect();
