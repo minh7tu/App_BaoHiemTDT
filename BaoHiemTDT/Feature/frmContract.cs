@@ -9,15 +9,15 @@ using System.Windows.Forms;
 
 namespace BaoHiemTDT.Feature
 {
-    public partial class frmPay : Form
+    public partial class frmContract : Form
     {
-        public frmPay()
+        public frmContract()
         {
             InitializeComponent();
         }
 
-        
+       
 
-        
+       
     }
 }

@@ -73,6 +73,12 @@
     <Compile Include="Feature\frmCommerce.Designer.cs">
       <DependentUpon>frmCommerce.cs</DependentUpon>
     </Compile>
+    <Compile Include="Feature\frmContract.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feature\frmContract.Designer.cs">
+      <DependentUpon>frmContract.cs</DependentUpon>
+    </Compile>
     <Compile Include="Feature\frmCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     <EmbeddedResource Include="Feature\frmCommerce.resx">
       <DependentUpon>frmCommerce.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Feature\frmContract.resx">
+      <DependentUpon>frmContract.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Feature\frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Feature\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feature\frmPay.resx">
+      <DependentUpon>frmPay.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Feature\frmProduct.resx">
       <DependentUpon>frmProduct.cs</DependentUpon>
