@@ -542,6 +542,7 @@
             this.btnComQLai.TabIndex = 3;
             this.btnComQLai.Text = "Quay lại";
             this.btnComQLai.UseVisualStyleBackColor = true;
+            this.btnComQLai.Click += new System.EventHandler(this.btnComQLai_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -567,7 +568,9 @@
             this.Controls.Add(this.btnComQLai);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "frmAsset";
-            this.Text = "frmAsset";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Bảo Hiểm Tài Sản";
+            this.Load += new System.EventHandler(this.frmAsset_Load);
             this.grbTaiSan.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);

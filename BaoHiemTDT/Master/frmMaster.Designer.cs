@@ -307,8 +307,8 @@
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem tSMItemLogin;
         private System.Windows.Forms.ToolStripMenuItem tSMItemClose;
-        private System.Windows.Forms.Panel paneChild;
         private System.Windows.Forms.Label lblName;
+        public System.Windows.Forms.Panel paneChild;
 
     }
 }

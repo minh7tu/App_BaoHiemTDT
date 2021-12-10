@@ -9,14 +9,14 @@ using System.Windows.Forms;
 
 namespace BaoHiemTDT.Feature
 {
-    public partial class frmAsset : Form
+    public partial class frmGovernment : Form
     {
-        public frmAsset()
+        public frmGovernment()
         {
             InitializeComponent();
         }
 
-        private void frmAsset_Load(object sender, EventArgs e)
+        private void frmGovernment_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
         }
@@ -25,7 +25,5 @@ namespace BaoHiemTDT.Feature
         {
             this.Close();
         }
-
-      
     }
 }

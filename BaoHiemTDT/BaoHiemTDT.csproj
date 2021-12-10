@@ -97,6 +97,12 @@
     <Compile Include="Feature\frmForgotPassword.Designer.cs">
       <DependentUpon>frmForgotPassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="Feature\frmGovernment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feature\frmGovernment.Designer.cs">
+      <DependentUpon>frmGovernment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Feature\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Feature\frmForgotPassword.resx">
       <DependentUpon>frmForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feature\frmGovernment.resx">
+      <DependentUpon>frmGovernment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Feature\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
@@ -199,17 +208,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>BaoHiemTDT.mdf</DependentUpon>
     </Content>
-    <Content Include="Master\Image\close.jpg" />
-    <Content Include="Master\Image\user.png" />
-    <Content Include="Master\Image\user_icon_150670.png" />
-    <None Include="Master\Image\logo-login.png" />
-    <Content Include="Master\Image\lock.png" />
-    <Content Include="Master\Image\logo_title.ico" />
-    <Content Include="Master\Image\logo_title.jpg" />
-    <Content Include="Master\Image\maximize.jpg" />
-    <Content Include="Master\Image\minimize.jpg" />
-    <Content Include="Master\Image\restore.jpg" />
-    <Content Include="Master\Image\ttk.jpg" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

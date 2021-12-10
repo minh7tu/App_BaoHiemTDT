@@ -24,6 +24,11 @@ namespace BaoHiemTDT.Master
             lblName.Text +=" " + username;
         }
 
+        public frmMaster()
+        {
+            // TODO: Complete member initialization
+        }
+
         private void frmMaster_Load(object sender, EventArgs e)
         {
             //Loại bỏ đường viền của Form
@@ -32,8 +37,6 @@ namespace BaoHiemTDT.Master
             this.Text = "";
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.notify.ContextMenuStrip = this.contextMenuStrip;
-
-            
         }
 
         [DllImport("user32.DLL",EntryPoint="ReleaseCapture")]
@@ -78,7 +81,7 @@ namespace BaoHiemTDT.Master
             Application.Exit();
         }
         //Mở 1 form
-        private void openChildForm(Form childForm , object btnSender)
+        public void openChildForm(Form childForm , object btnSender)
         {
             if (activeForm != null)
             {

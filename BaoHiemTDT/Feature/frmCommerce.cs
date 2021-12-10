@@ -25,12 +25,17 @@ namespace BaoHiemTDT.Feature
 
         private void btnComQLai_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
 
         private void btnTuKy_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmCommerce_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
         }
 
        
