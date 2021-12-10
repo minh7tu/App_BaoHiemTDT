@@ -67,6 +67,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BaoHiemTDT_DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Feature\frmAsset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feature\frmAsset.Designer.cs">
+      <DependentUpon>frmAsset.cs</DependentUpon>
+    </Compile>
     <Compile Include="Feature\frmCommerce.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +129,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Feature\frmAsset.resx">
+      <DependentUpon>frmAsset.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Feature\frmCommerce.resx">
       <DependentUpon>frmCommerce.cs</DependentUpon>
     </EmbeddedResource>
@@ -190,17 +199,17 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>BaoHiemTDT.mdf</DependentUpon>
     </Content>
-    <Content Include="Image\close.jpg" />
-    <Content Include="Image\user.png" />
-    <Content Include="Image\user_icon_150670.png" />
-    <None Include="Image\logo-login.png" />
-    <Content Include="Image\lock.png" />
-    <Content Include="Image\logo_title.ico" />
-    <Content Include="Image\logo_title.jpg" />
-    <Content Include="Image\maximize.jpg" />
-    <Content Include="Image\minimize.jpg" />
-    <Content Include="Image\restore.jpg" />
-    <Content Include="Image\ttk.jpg" />
+    <Content Include="Master\Image\close.jpg" />
+    <Content Include="Master\Image\user.png" />
+    <Content Include="Master\Image\user_icon_150670.png" />
+    <None Include="Master\Image\logo-login.png" />
+    <Content Include="Master\Image\lock.png" />
+    <Content Include="Master\Image\logo_title.ico" />
+    <Content Include="Master\Image\logo_title.jpg" />
+    <Content Include="Master\Image\maximize.jpg" />
+    <Content Include="Master\Image\minimize.jpg" />
+    <Content Include="Master\Image\restore.jpg" />
+    <Content Include="Master\Image\ttk.jpg" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
