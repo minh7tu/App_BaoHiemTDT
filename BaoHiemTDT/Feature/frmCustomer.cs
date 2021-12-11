@@ -13,6 +13,7 @@ namespace BaoHiemTDT.Feature
 {
     public partial class frmCustomer : Form
     {
+        public static string sdt;
 
         public frmCustomer()
         {
@@ -29,30 +30,36 @@ namespace BaoHiemTDT.Feature
             txtNgaySinh.Enabled = false;
             txtSDT.Enabled = false;
 
-            txtHoTen.Text = frmMaster.tk;
-            
-            //BaoHiemTDT.Config.TDT.Connect();
-            //try
-            //{
-                
-            //    SqlCommand scd = new SqlCommand(tk,BaoHiemTDT.Config.TDT.connect);
-            //    SqlDataReader data = scd.ExecuteReader();
+            BaoHiemTDT.Config.TDT.Connect();
+            try
+            {
 
-            //    if (data.Read())
-            //    {
-            //        txtSDT.Text = data[0].ToString();
-            //        txtHoTen.Text = data[1].ToString();
-            //        txtGioiTinh.Text = data[2].ToString();
-            //        txtNgaySinh.Text = data[3].ToString();
-            //        txtEmail.Text = data[4].ToString();
-            //        txtDiaChi.Text = data[5].ToString();
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message);
-            //}
-            //BaoHiemTDT.Config.TDT.Disconect();
+                string sodt = "select SDT from TAIKHOAN where TenTK='" + frmMaster.tk.ToString() + "'";
+                SqlCommand scd0 = new SqlCommand(sodt, BaoHiemTDT.Config.TDT.connect);
+                SqlDataReader data0 = scd0.ExecuteReader();
+                if (data0.Read())
+                    txtSDT.Text = data0["SDT"].ToString();
+                BaoHiemTDT.Config.TDT.Disconect();
+                BaoHiemTDT.Config.TDT.Connect();
+                string tkn = "select * from KHACHHANG where KHACHHANG.SDT='" + txtSDT.Text + "'";
+                SqlCommand scd = new SqlCommand(tkn, BaoHiemTDT.Config.TDT.connect);
+                SqlDataReader dt = scd.ExecuteReader();
+                if (dt.Read())
+                {
+                    txtHoTen.Text = dt["HoTen"].ToString();
+                    txtGioiTinh.Text = dt["GioiTinh"].ToString();
+                    txtNgaySinh.Text = dt["NgaySinh"].ToString();
+                    txtEmail.Text = dt["Email"].ToString();
+                    txtDiaChi.Text = dt["DiaChi"].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            BaoHiemTDT.Config.TDT.Disconect();
+
+
         }
 
         private void btnModifier_Click(object sender, EventArgs e)
