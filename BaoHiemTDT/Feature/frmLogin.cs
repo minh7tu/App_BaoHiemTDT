@@ -16,11 +16,17 @@ namespace BaoHiemTDT.Feature
     public partial class frmLogin : Form
     {
         Thread th;
-        string username;
+        string username ;
 
         public frmLogin()
         {
             InitializeComponent();
+        }
+
+        public string getUsername()
+        {
+            username = txtTaiKhoan.Text;
+            return username;
         }
 
         private void txtTaiKhoan_Enter(object sender, EventArgs e)

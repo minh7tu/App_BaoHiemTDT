@@ -7,23 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using BaoHiemTDT.Master;
 
 namespace BaoHiemTDT.Feature
 {
     public partial class frmCustomer : Form
     {
 
-        string user;
-
         public frmCustomer()
         {
             InitializeComponent();
-        }
-
-        public frmCustomer(string username)
-        {
-            InitializeComponent();
-            user = username;
         }
 
         private void frmCustomer_Load(object sender, EventArgs e)
@@ -36,15 +29,30 @@ namespace BaoHiemTDT.Feature
             txtNgaySinh.Enabled = false;
             txtSDT.Enabled = false;
 
-            BaoHiemTDT.Config.TDT.Connect();
-            try
-            {
+            txtHoTen.Text = frmMaster.tk;
+            
+            //BaoHiemTDT.Config.TDT.Connect();
+            //try
+            //{
+                
+            //    SqlCommand scd = new SqlCommand(tk,BaoHiemTDT.Config.TDT.connect);
+            //    SqlDataReader data = scd.ExecuteReader();
 
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            //    if (data.Read())
+            //    {
+            //        txtSDT.Text = data[0].ToString();
+            //        txtHoTen.Text = data[1].ToString();
+            //        txtGioiTinh.Text = data[2].ToString();
+            //        txtNgaySinh.Text = data[3].ToString();
+            //        txtEmail.Text = data[4].ToString();
+            //        txtDiaChi.Text = data[5].ToString();
+            //    }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+            //BaoHiemTDT.Config.TDT.Disconect();
         }
 
         private void btnModifier_Click(object sender, EventArgs e)

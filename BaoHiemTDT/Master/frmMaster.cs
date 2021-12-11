@@ -17,11 +17,13 @@ namespace BaoHiemTDT.Master
         //Field
         private Form activeForm;
         private Thread th;
+        public static string tk;
 
         public frmMaster(string username)
         {
             InitializeComponent();
-            lblName.Text +="," + username;
+            lblName.Text +=" ," + username;
+            tk = username;//Gán để đọc username
         }
 
         public frmMaster()
