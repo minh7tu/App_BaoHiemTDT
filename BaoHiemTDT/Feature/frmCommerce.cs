@@ -21,6 +21,7 @@ namespace BaoHiemTDT.Feature
             frmContract sinhky = new frmContract();
             sinhky.ShowDialog();
 
+
         }
 
         private void btnComQLai_Click(object sender, EventArgs e)

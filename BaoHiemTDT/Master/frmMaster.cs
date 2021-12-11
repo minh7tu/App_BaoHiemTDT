@@ -21,7 +21,7 @@ namespace BaoHiemTDT.Master
         public frmMaster(string username)
         {
             InitializeComponent();
-            lblName.Text +=" " + username;
+            lblName.Text +="," + username;
         }
 
         public frmMaster()
