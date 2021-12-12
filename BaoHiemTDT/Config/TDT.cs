@@ -32,10 +32,5 @@ namespace BaoHiemTDT.Config
                 connect = null;
             }
         }
-
-        public static void getProduct(string getNameProduct)
-        {
-
-        }
     }
 }
