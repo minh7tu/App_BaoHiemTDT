@@ -51,10 +51,11 @@
             "VietcomBank",
             "VietinBank"});
             this.cbbPTenNH.Location = new System.Drawing.Point(222, 205);
-            this.cbbPTenNH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbbPTenNH.Margin = new System.Windows.Forms.Padding(2);
             this.cbbPTenNH.Name = "cbbPTenNH";
             this.cbbPTenNH.Size = new System.Drawing.Size(125, 21);
             this.cbbPTenNH.TabIndex = 1;
+            this.cbbPTenNH.SelectedIndexChanged += new System.EventHandler(this.cbbPTenNH_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -90,7 +91,7 @@
             // txtPStk
             // 
             this.txtPStk.Location = new System.Drawing.Point(222, 257);
-            this.txtPStk.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPStk.Margin = new System.Windows.Forms.Padding(2);
             this.txtPStk.Name = "txtPStk";
             this.txtPStk.Size = new System.Drawing.Size(125, 20);
             this.txtPStk.TabIndex = 4;
@@ -98,7 +99,7 @@
             // btnPThanhToan
             // 
             this.btnPThanhToan.Location = new System.Drawing.Point(173, 323);
-            this.btnPThanhToan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPThanhToan.Margin = new System.Windows.Forms.Padding(2);
             this.btnPThanhToan.Name = "btnPThanhToan";
             this.btnPThanhToan.Size = new System.Drawing.Size(102, 34);
             this.btnPThanhToan.TabIndex = 5;
@@ -110,7 +111,7 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Location = new System.Drawing.Point(163, 22);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(112, 81);
             this.pictureBox1.TabIndex = 20;
@@ -129,10 +130,11 @@
             this.Controls.Add(this.lblPStk);
             this.Controls.Add(this.lblPTenNH);
             this.Controls.Add(this.cbbPTenNH);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmPay";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmPay";
+            this.Text = "Thanh toán";
+            this.Load += new System.EventHandler(this.frmPay_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

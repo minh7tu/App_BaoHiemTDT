@@ -26,7 +26,8 @@ namespace BaoHiemTDT.Feature
         private void btnCTDongY_Click(object sender, EventArgs e)
         {
             this.Close();
-            Application.Run(new frmPay());
+            frmPay pay = new frmPay();
+            pay.ShowDialog();
         }
 
         private void ckbCTDongY_CheckedChanged(object sender, EventArgs e)
@@ -39,6 +40,8 @@ namespace BaoHiemTDT.Feature
 
         private void frmContract_Load(object sender, EventArgs e)
         {
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+
             btnCTDongY.Enabled = false;
             txtCTCccd.Enabled = false;
             txtCTChiPhi.Enabled = false;

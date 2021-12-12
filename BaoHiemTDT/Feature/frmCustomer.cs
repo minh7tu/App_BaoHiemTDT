@@ -39,6 +39,9 @@ namespace BaoHiemTDT.Feature
                 SqlDataReader data0 = scd0.ExecuteReader();
                 if (data0.Read())
                     txtSDT.Text = data0["SDT"].ToString();
+
+                sdt = txtSDT.Text;
+
                 BaoHiemTDT.Config.TDT.Disconect();
                 BaoHiemTDT.Config.TDT.Connect();
                 string tkn = "select * from KHACHHANG where KHACHHANG.SDT='" + txtSDT.Text + "'";
