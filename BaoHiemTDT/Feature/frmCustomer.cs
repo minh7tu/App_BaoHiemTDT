@@ -81,6 +81,21 @@ namespace BaoHiemTDT.Feature
         private void btnSave_Click(object sender, EventArgs e)
         {
             //Viết câu lệnh update dữ liệu
+            BaoHiemTDT.Config.TDT.Connect();
+            
+            //khai báo câu lệnh cập nhật dữ liệu
+            string capnhat = "update KHACHHANG set SDT='" + txtSDT.Text + "',HoTen=N'" + txtHoTen.Text + "',GioiTinh=N'" + txtGioiTinh.Text + "',Email='" + txtEmail.Text + "',Diachi=N'" + txtDiaChi.Text + "' where SDT='" + txtSDT.Text + "'";
+
+            SqlCommand scd = new SqlCommand(capnhat, BaoHiemTDT.Config.TDT.connect);
+
+            try
+            {
+                scd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
             //Ẩn nút lưu
             btnSave.Visible = false;
