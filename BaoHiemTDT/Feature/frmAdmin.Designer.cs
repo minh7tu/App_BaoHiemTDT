@@ -29,10 +29,23 @@
         private void InitializeComponent()
         {
             this.grbQuanLy = new System.Windows.Forms.GroupBox();
-            this.dgvQuanLy = new System.Windows.Forms.DataGridView();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.btnSua = new System.Windows.Forms.Button();
+            this.txtAEmail = new System.Windows.Forms.TextBox();
+            this.txtADiaChi = new System.Windows.Forms.TextBox();
+            this.txtANgaySinh = new System.Windows.Forms.TextBox();
+            this.txtAGioiTinh = new System.Windows.Forms.TextBox();
+            this.txtASdt = new System.Windows.Forms.TextBox();
+            this.txtAHoTen = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.btnLuu = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.dgvQuanLy = new System.Windows.Forms.DataGridView();
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -41,20 +54,178 @@
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grbQuanLy.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuanLy)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // grbQuanLy
             // 
+            this.grbQuanLy.Controls.Add(this.txtAEmail);
+            this.grbQuanLy.Controls.Add(this.txtADiaChi);
+            this.grbQuanLy.Controls.Add(this.txtANgaySinh);
+            this.grbQuanLy.Controls.Add(this.txtAGioiTinh);
+            this.grbQuanLy.Controls.Add(this.txtASdt);
+            this.grbQuanLy.Controls.Add(this.txtAHoTen);
+            this.grbQuanLy.Controls.Add(this.label6);
+            this.grbQuanLy.Controls.Add(this.label5);
+            this.grbQuanLy.Controls.Add(this.btnLuu);
+            this.grbQuanLy.Controls.Add(this.btnSua);
+            this.grbQuanLy.Controls.Add(this.btnXoa);
+            this.grbQuanLy.Controls.Add(this.btnThem);
+            this.grbQuanLy.Controls.Add(this.label4);
+            this.grbQuanLy.Controls.Add(this.label3);
+            this.grbQuanLy.Controls.Add(this.label2);
+            this.grbQuanLy.Controls.Add(this.label1);
             this.grbQuanLy.Controls.Add(this.dgvQuanLy);
             this.grbQuanLy.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.grbQuanLy.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grbQuanLy.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grbQuanLy.Location = new System.Drawing.Point(0, 0);
             this.grbQuanLy.Name = "grbQuanLy";
             this.grbQuanLy.Size = new System.Drawing.Size(1072, 560);
             this.grbQuanLy.TabIndex = 0;
             this.grbQuanLy.TabStop = false;
             this.grbQuanLy.Text = "Quản lý tài khoản";
+            // 
+            // txtAEmail
+            // 
+            this.txtAEmail.Location = new System.Drawing.Point(842, 310);
+            this.txtAEmail.Name = "txtAEmail";
+            this.txtAEmail.Size = new System.Drawing.Size(207, 27);
+            this.txtAEmail.TabIndex = 8;
+            // 
+            // txtADiaChi
+            // 
+            this.txtADiaChi.Location = new System.Drawing.Point(842, 251);
+            this.txtADiaChi.Name = "txtADiaChi";
+            this.txtADiaChi.Size = new System.Drawing.Size(207, 27);
+            this.txtADiaChi.TabIndex = 8;
+            // 
+            // txtANgaySinh
+            // 
+            this.txtANgaySinh.Location = new System.Drawing.Point(842, 198);
+            this.txtANgaySinh.Name = "txtANgaySinh";
+            this.txtANgaySinh.Size = new System.Drawing.Size(207, 27);
+            this.txtANgaySinh.TabIndex = 8;
+            // 
+            // txtAGioiTinh
+            // 
+            this.txtAGioiTinh.Location = new System.Drawing.Point(842, 143);
+            this.txtAGioiTinh.Name = "txtAGioiTinh";
+            this.txtAGioiTinh.Size = new System.Drawing.Size(207, 27);
+            this.txtAGioiTinh.TabIndex = 8;
+            // 
+            // txtASdt
+            // 
+            this.txtASdt.Location = new System.Drawing.Point(842, 93);
+            this.txtASdt.Name = "txtASdt";
+            this.txtASdt.Size = new System.Drawing.Size(207, 27);
+            this.txtASdt.TabIndex = 8;
+            // 
+            // txtAHoTen
+            // 
+            this.txtAHoTen.Location = new System.Drawing.Point(842, 49);
+            this.txtAHoTen.Name = "txtAHoTen";
+            this.txtAHoTen.Size = new System.Drawing.Size(207, 27);
+            this.txtAHoTen.TabIndex = 8;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(725, 317);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(56, 20);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Email:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(725, 254);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 20);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Địa Chỉ:";
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLuu.Location = new System.Drawing.Point(934, 487);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Size = new System.Drawing.Size(75, 31);
+            this.btnLuu.TabIndex = 5;
+            this.btnLuu.Text = "Lưu";
+            this.btnLuu.UseVisualStyleBackColor = true;
+            // 
+            // btnSua
+            // 
+            this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.Location = new System.Drawing.Point(934, 417);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(75, 32);
+            this.btnSua.TabIndex = 5;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Location = new System.Drawing.Point(760, 487);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 31);
+            this.btnXoa.TabIndex = 5;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
+            // btnThem
+            // 
+            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Location = new System.Drawing.Point(760, 417);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(75, 32);
+            this.btnThem.TabIndex = 5;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(725, 201);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(90, 20);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Ngày Sinh:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(725, 150);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 20);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Giới Tính:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(725, 100);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(48, 20);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "SDT:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(725, 49);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 20);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Họ Tên:";
             // 
             // dgvQuanLy
             // 
@@ -67,47 +238,13 @@
             this.NgaySinh,
             this.DiaChi,
             this.Email});
-            this.dgvQuanLy.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvQuanLy.Location = new System.Drawing.Point(3, 26);
             this.dgvQuanLy.Name = "dgvQuanLy";
             this.dgvQuanLy.RowTemplate.Height = 24;
-            this.dgvQuanLy.Size = new System.Drawing.Size(1066, 531);
+            this.dgvQuanLy.Size = new System.Drawing.Size(716, 531);
             this.dgvQuanLy.TabIndex = 0;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Controls.Add(this.btnSua, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btnLuu, 1, 0);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 529);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1072, 31);
-            this.tableLayoutPanel1.TabIndex = 1;
-            // 
-            // btnSua
-            // 
-            this.btnSua.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSua.Location = new System.Drawing.Point(3, 3);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(530, 25);
-            this.btnSua.TabIndex = 0;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnLuu.Location = new System.Drawing.Point(539, 3);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(530, 25);
-            this.btnLuu.TabIndex = 1;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
+            this.dgvQuanLy.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvQuanLy_CellClick);
+            this.dgvQuanLy.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvQuanLy_CellContentClick);
             // 
             // HoTen
             // 
@@ -156,14 +293,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1072, 560);
-            this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.grbQuanLy);
             this.Name = "frmAdmin";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmAdmin_Load);
             this.grbQuanLy.ResumeLayout(false);
+            this.grbQuanLy.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuanLy)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -172,14 +308,27 @@
 
         private System.Windows.Forms.GroupBox grbQuanLy;
         private System.Windows.Forms.DataGridView dgvQuanLy;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button btnSua;
-        private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
         private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
         private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgaySinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnLuu;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtAEmail;
+        private System.Windows.Forms.TextBox txtADiaChi;
+        private System.Windows.Forms.TextBox txtANgaySinh;
+        private System.Windows.Forms.TextBox txtAGioiTinh;
+        private System.Windows.Forms.TextBox txtASdt;
+        private System.Windows.Forms.TextBox txtAHoTen;
     }
 }

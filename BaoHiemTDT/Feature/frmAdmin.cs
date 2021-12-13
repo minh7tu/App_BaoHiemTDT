@@ -17,9 +17,16 @@ namespace BaoHiemTDT.Feature
             InitializeComponent();
         }
 
-      
+      //Hien Thi thong tin len datagridview
         private void frmAdmin_Load(object sender, EventArgs e)
         {
+            txtAHoTen.Enabled = false;
+            txtASdt.Enabled = false;
+            txtANgaySinh.Enabled = false;
+            txtAGioiTinh.Enabled = false;
+            txtAEmail.Enabled = false;
+            txtADiaChi.Enabled = false;
+
             BaoHiemTDT.Config.TDT.Connect();
             String sql = "Select * from KHACHHANG";
             DataSet ds = new DataSet();
@@ -29,5 +36,37 @@ namespace BaoHiemTDT.Feature
             dgvQuanLy.DataSource = ds.Tables[0];
             dgvQuanLy.Refresh();
         }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void dgvQuanLy_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+
+        }
+
+        private void dgvQuanLy_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvQuanLy.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
+            {
+                dgvQuanLy.CurrentRow.Selected = true;
+                txtAHoTen.Text = dgvQuanLy.Rows[e.RowIndex].Cells["HoTen"].FormattedValue.ToString();
+                txtASdt.Text = dgvQuanLy.Rows[e.RowIndex].Cells["SDT"].FormattedValue.ToString();
+                txtAGioiTinh.Text = dgvQuanLy.Rows[e.RowIndex].Cells["GioiTinh"].FormattedValue.ToString();
+                txtANgaySinh.Text = dgvQuanLy.Rows[e.RowIndex].Cells["NgaySinh"].FormattedValue.ToString();
+                txtADiaChi.Text = dgvQuanLy.Rows[e.RowIndex].Cells["DiaChi"].FormattedValue.ToString();
+                txtAEmail.Text = dgvQuanLy.Rows[e.RowIndex].Cells["Email"].FormattedValue.ToString();
+            }
+        }
+
+        
     }
 }
