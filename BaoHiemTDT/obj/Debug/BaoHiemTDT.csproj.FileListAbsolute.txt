@@ -79,3 +79,4 @@ E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmRegister.
 E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Master.frmMaster.resources
 E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Properties.Resources.resources
 E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csproj.GenerateResource.Cache
+D:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csprojResolveAssemblyReference.cache
