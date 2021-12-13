@@ -100,3 +100,5 @@ E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmRegister.resour
 E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Master.frmMaster.resources
 E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Properties.Resources.resources
 E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csproj.GenerateResource.Cache
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csprojResolveAssemblyReference.cache
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.Form1.resources

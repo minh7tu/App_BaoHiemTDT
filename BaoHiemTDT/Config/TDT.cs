@@ -36,6 +36,6 @@ namespace BaoHiemTDT.Config
                 connect = null;
             }
         }
-
+      
     }
 }
