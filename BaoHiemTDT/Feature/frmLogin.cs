@@ -121,8 +121,8 @@ namespace BaoHiemTDT.Feature
 
         private void openNewFrom()
         {
-            
-                Application.Run(new frmMaster(username));
+          
+            Application.Run(new frmMaster(username));
             
         }
 

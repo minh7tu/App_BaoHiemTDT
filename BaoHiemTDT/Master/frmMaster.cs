@@ -39,6 +39,8 @@ namespace BaoHiemTDT.Master
             this.Text = "";
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.notify.ContextMenuStrip = this.contextMenuStrip;
+
+            btnProduct.Enabled = false;
         }
 
         [DllImport("user32.DLL",EntryPoint="ReleaseCapture")]
@@ -112,11 +114,13 @@ namespace BaoHiemTDT.Master
         //Xem thông tin khách , đóng form hiện tại
         private void btnCustomer_Click(object sender, EventArgs e)
         {
+            btnProduct.Enabled = true;
             openChildForm(new frmCustomer(), sender);
         }
         //Chọn product , đóng form hiện tại
         private void btnProduct_Click(object sender, EventArgs e)
-        {
+        {   
+
             openChildForm(new frmProduct(), sender);
         }
         //Đăng xuất , đóng form hiện tại
