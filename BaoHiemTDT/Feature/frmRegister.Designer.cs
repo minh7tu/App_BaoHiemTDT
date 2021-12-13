@@ -41,11 +41,12 @@ namespace BaoHiemTDT.Feature
             this.txtRegisSDT = new System.Windows.Forms.TextBox();
             this.btnDangKy = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnExit = new System.Windows.Forms.Button();
             this.lblThoat = new System.Windows.Forms.Label();
             this.ckbHienMK = new System.Windows.Forms.CheckBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblRegisCheck = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -171,6 +172,17 @@ namespace BaoHiemTDT.Feature
             this.panel1.Size = new System.Drawing.Size(800, 32);
             this.panel1.TabIndex = 5;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(43, 32);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
             // btnExit
             // 
             this.btnExit.FlatAppearance.BorderSize = 0;
@@ -206,17 +218,6 @@ namespace BaoHiemTDT.Feature
             this.ckbHienMK.UseVisualStyleBackColor = true;
             this.ckbHienMK.CheckedChanged += new System.EventHandler(this.ckbHienMK_CheckedChanged);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(43, 32);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::BaoHiemTDT.Properties.Resources.logo_login1;
@@ -228,6 +229,15 @@ namespace BaoHiemTDT.Feature
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // lblRegisCheck
+            // 
+            this.lblRegisCheck.AutoSize = true;
+            this.lblRegisCheck.Location = new System.Drawing.Point(327, 339);
+            this.lblRegisCheck.Name = "lblRegisCheck";
+            this.lblRegisCheck.Size = new System.Drawing.Size(274, 17);
+            this.lblRegisCheck.TabIndex = 8;
+            this.lblRegisCheck.Text = "Mật khẩu nhập lại đã sai!Vui lòng nhập lại.";
+            // 
             // frmRegister
             // 
             this.AcceptButton = this.btnDangKy;
@@ -235,6 +245,7 @@ namespace BaoHiemTDT.Feature
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(239)))));
             this.ClientSize = new System.Drawing.Size(800, 567);
+            this.Controls.Add(this.lblRegisCheck);
             this.Controls.Add(this.ckbHienMK);
             this.Controls.Add(this.lblThoat);
             this.Controls.Add(this.panel1);
@@ -281,5 +292,6 @@ namespace BaoHiemTDT.Feature
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label lblThoat;
         private System.Windows.Forms.CheckBox ckbHienMK;
+        private System.Windows.Forms.Label lblRegisCheck;
     }
 }

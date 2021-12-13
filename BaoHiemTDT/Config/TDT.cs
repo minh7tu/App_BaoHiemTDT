@@ -18,7 +18,11 @@ namespace BaoHiemTDT.Config
 
         public static void Connect()
         {
-            string str = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\BaoHiemTDT\BaoHiemTDT\Data\BaoHiemTDT.mdf;Integrated Security=True";
+            //Dai
+            string str = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\Data\BaoHiemTDT.mdf;Integrated Security=True";
+            //Thuyet
+            //string str = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\BaoHiemTDT\BaoHiemTDT\Data\BaoHiemTDT.mdf;Integrated Security=True";
+       
             connect = new SqlConnection(str);
             connect.Open();
         }

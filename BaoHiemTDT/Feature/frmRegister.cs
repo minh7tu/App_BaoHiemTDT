@@ -22,6 +22,7 @@ namespace BaoHiemTDT.Feature
         private void frmRegister_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            lblRegisCheck.Visible = false;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -114,16 +115,26 @@ namespace BaoHiemTDT.Feature
 
         private void btnDangKy_Click(object sender, EventArgs e)
         {
-            //Khai bao mo ket noi
-            BaoHiemTDT.Config.TDT.Connect();
-            SqlCommand scd = new SqlCommand("pro_dangky", BaoHiemTDT.Config.TDT.connect);
-            scd.CommandType = CommandType.StoredProcedure;
-            scd.Parameters.AddWithValue("@TenTk", txtRegisTK.Text);
-            scd.Parameters.AddWithValue("@MatKhau", txtRegisMK.Text);
-            scd.ExecuteNonQuery();
-            new frmLogin().Show();
-            this.Hide();
-        
+            if (txtReregismk.Text != txtRegisMK.Text)
+            {
+                lblRegisCheck.Visible = true;
+                lblRegisCheck.ForeColor = Color.Red;
+                txtReregismk.Text = " ";
+                txtReregismk.Focus();
+            }
+            else
+            {
+                //Khai bao mo ket noi
+                BaoHiemTDT.Config.TDT.Connect();
+                SqlCommand scd = new SqlCommand("pro_dangky", BaoHiemTDT.Config.TDT.connect);
+                scd.CommandType = CommandType.StoredProcedure;
+                scd.Parameters.AddWithValue("@TenTk", txtRegisTK.Text);
+                scd.Parameters.AddWithValue("@MatKhau", txtRegisMK.Text);
+                scd.Parameters.AddWithValue("@SDT", txtRegisSDT.Text);
+                scd.ExecuteNonQuery();
+                new frmLogin().Show();
+                this.Hide();
+            }
         }
 
         private void lblThoat_Click(object sender, EventArgs e)

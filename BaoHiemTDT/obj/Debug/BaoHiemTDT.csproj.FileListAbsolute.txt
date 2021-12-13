@@ -80,3 +80,23 @@ E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Master.frmMaster.res
 E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Properties.Resources.resources
 E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csproj.GenerateResource.Cache
 D:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csprojResolveAssemblyReference.cache
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\bin\Debug\BaoHiemTDT.exe.config
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.exe
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.pdb
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\bin\Debug\Data\BaoHiemTDT.mdf
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\bin\Debug\Data\BaoHiemTDT_log.ldf
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\bin\Debug\BaoHiemTDT.exe
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\bin\Debug\BaoHiemTDT.pdb
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmAsset.resources
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmCommerce.resources
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmContract.resources
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmCustomer.resources
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmForgotPassword.resources
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmGovernment.resources
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmLogin.resources
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmPay.resources
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmProduct.resources
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmRegister.resources
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Master.frmMaster.resources
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Properties.Resources.resources
+E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csproj.GenerateResource.Cache
