@@ -58,3 +58,24 @@ D:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmContract.resources
 D:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmPay.resources
 D:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmGovernment.resources
 E:\BẢo hiểm TDT xịn\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmGovernment.resources
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\bin\Debug\BaoHiemTDT.exe.config
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.exe
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.pdb
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\bin\Debug\Data\BaoHiemTDT.mdf
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\bin\Debug\Data\BaoHiemTDT_log.ldf
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\bin\Debug\BaoHiemTDT.exe
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\bin\Debug\BaoHiemTDT.pdb
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csprojResolveAssemblyReference.cache
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmAsset.resources
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmCommerce.resources
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmContract.resources
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmCustomer.resources
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmForgotPassword.resources
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmGovernment.resources
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmLogin.resources
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmPay.resources
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmProduct.resources
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmRegister.resources
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Master.frmMaster.resources
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Properties.Resources.resources
+E:\.net 13.12.21\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csproj.GenerateResource.Cache
