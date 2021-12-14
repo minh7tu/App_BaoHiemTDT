@@ -112,12 +112,12 @@ namespace BaoHiemTDT.Feature
             BaoHiemTDT.Config.TDT.Connect();
             
             //khai báo câu lệnh cập nhật dữ liệu
-            string capnhat = "update KHACHHANG set KHACHHANG.SDT='" + txtSDT.Text + "',HoTen=N'" + txtHoTen.Text + "',";
+            string capnhat = "update KHACHHANG,HOADON,GIAYTO,TAIKHOAN,THETHANHTOAN set KHACHHANG.SDT='" + txtSDT.Text + "',HoTen=N'" + txtHoTen.Text + "',";
             capnhat += "GioiTinh=N'" + txtGioiTinh.Text + "',Email='" + txtEmail.Text + "',";
             capnhat +="Diachi=N'" + txtDiaChi.Text + "',MaGT="+txtSo.Text+"',TenGT=N'"+cbbTenGT.Text+"',";
             capnhat += "NgayCap=N'" + txtNgayCap.Text + "',NoiCap=N'" + txtNoiCap.Text + "',GIAYTO.SDT='" + txtSDT.Text + "',";
             capnhat += "HOADON.SDT='" + txtSDT.Text + "',TAIKHOAN.SDT='" + txtSDT.Text + "',THETHANHTOAN.SDT='" + txtSDT.Text + "'"; 
-            capnhat += "where SDT='" + txtSDT.Text + "'";
+            capnhat += "where KHACHHANG.SDT=HOADON.SDT and KHACHHANG.SDT=GIAYTO.SDT and KHACHHANG.SDT=TAIKHOAN.SDT and KHACHHANG.SDT=THETHANHTOAN.SDT";
 
             SqlCommand scd = new SqlCommand(capnhat, BaoHiemTDT.Config.TDT.connect);
 
@@ -129,7 +129,7 @@ namespace BaoHiemTDT.Feature
             {
                 MessageBox.Show(ex.Message);
             }
-
+            BaoHiemTDT.Config.TDT.Disconect();
             //Ẩn nút lưu
             btnSave.Visible = false;
             //Chỉ cho phép đọc dữ liệu

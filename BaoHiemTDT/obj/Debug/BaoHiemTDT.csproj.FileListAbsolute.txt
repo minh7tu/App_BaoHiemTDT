@@ -100,7 +100,6 @@ E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmRegister.resour
 E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Master.frmMaster.resources
 E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Properties.Resources.resources
 E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csproj.GenerateResource.Cache
-E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csprojResolveAssemblyReference.cache
 E:\BaoHiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmAdmin.resources
 E:\BaoHiemNew\BaoHiemTDT\BaoHiemTDT\bin\Debug\BaoHiemTDT.exe.config
 E:\BaoHiemNew\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.exe
@@ -126,3 +125,4 @@ E:\BaoHiemNew\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Properties.Resources.re
 E:\BaoHiemNew\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csproj.GenerateResource.Cache
 E:\BẢo hiểm TDT xịn\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmAdmin.resources
 D:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmAdmin.resources
+E:\baohiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csprojResolveAssemblyReference.cache

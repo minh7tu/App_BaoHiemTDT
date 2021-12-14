@@ -17,7 +17,7 @@ namespace BaoHiemTDT.Feature
             InitializeComponent();
         }
 
-      //Hien Thi thong tin len datagridview
+        //Hien Thi thong tin len datagridview
         private void frmAdmin_Load(object sender, EventArgs e)
         {
             txtAHoTen.Enabled = false;
@@ -26,30 +26,49 @@ namespace BaoHiemTDT.Feature
             txtAGioiTinh.Enabled = false;
             txtAEmail.Enabled = false;
             txtADiaChi.Enabled = false;
+            txtATaiKhoan.Enabled = false;
+            txtAPhanLoai.Enabled = false;
+
+            
 
             BaoHiemTDT.Config.TDT.Connect();
-            String sql = "Select * from KHACHHANG";
+
+            String sql = "Select HoTen,KHACHHANG.SDT,GioiTinh,NgaySinh,Email,DiaChi,TenTK,PhanLoai from KHACHHANG,TAIKHOAN where TAIKHOAN.SDT = KHACHHANG.SDT ";
             DataSet ds = new DataSet();
             SqlDataAdapter dap = new SqlDataAdapter(sql, BaoHiemTDT.Config.TDT.connect);
-            dap.Fill(ds); 
+            dap.Fill(ds);
             //Gan du lieu len dgv
             dgvQuanLy.DataSource = ds.Tables[0];
             dgvQuanLy.Refresh();
+            
+
+         
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-
-        }
+        
         private void btnSua_Click(object sender, EventArgs e)
         {
-            
+            txtAHoTen.Enabled = true;
+            txtASdt.Enabled = true;
+            txtANgaySinh.Enabled = true;
+            txtAGioiTinh.Enabled = true;
+            txtAEmail.Enabled = true;
+            txtADiaChi.Enabled = true;
+            txtATaiKhoan.Enabled = true;
+            txtAPhanLoai.Enabled = true;
 
         }
-
-        private void dgvQuanLy_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnXoa_Click(object sender, EventArgs e)
         {
-            
+            txtAHoTen.Clear();
+            txtASdt.Clear();
+            txtANgaySinh.Clear();
+            txtAGioiTinh.Clear();
+            txtAEmail.Clear();
+            txtADiaChi.Clear();
+            txtATaiKhoan.Clear();
+            txtAPhanLoai.Clear();
+
 
         }
 
@@ -64,9 +83,30 @@ namespace BaoHiemTDT.Feature
                 txtANgaySinh.Text = dgvQuanLy.Rows[e.RowIndex].Cells["NgaySinh"].FormattedValue.ToString();
                 txtADiaChi.Text = dgvQuanLy.Rows[e.RowIndex].Cells["DiaChi"].FormattedValue.ToString();
                 txtAEmail.Text = dgvQuanLy.Rows[e.RowIndex].Cells["Email"].FormattedValue.ToString();
+                txtAPhanLoai.Text = dgvQuanLy.Rows[e.RowIndex].Cells["PhanLoai"].FormattedValue.ToString();
+                txtATaiKhoan.Text = dgvQuanLy.Rows[e.RowIndex].Cells["TenTK"].FormattedValue.ToString();
             }
+
+
         }
 
-        
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+
+            BaoHiemTDT.Config.TDT.Connect();
+            string luu = "UPDATE KHACHHANG.,TAIKHOAN,GIAYTO,HOADON,THETHANHTOAN SET HoTen=N'" + txtAHoTen.Text +"',";
+            luu += "KHACHHANG.SDT='" + txtASdt.Text + "',NgaySinh='" + txtANgaySinh.Text + "',GioiTinh='" + txtAGioiTinh.Text + "',";
+            luu += "Email='" +txtAEmail.Text +"',DiaChi='" + txtADiaChi.Text + "',TenTK='" +txtATaiKhoan.Text +"',PhanLoai='" +txtAPhanLoai.Text+"',";
+            luu += "TAIKHOAN.SDT='" + txtASdt.Text + "',GIAYTO.SDT='" + txtASdt.Text + "',HOADON.SDT='" + txtASdt.Text + "',THETHANHTOAN.SDT='" + txtASdt.Text + "'";
+            luu += "WHERE KHACHHANG.SDT=TAIKHOAN and KHACHHANG.SDT=GIAYTO.SDT and KHACHHANG.SDT=HOADON.SDT and KHACHHANG.SDT=THETHANHTOAN.SDT";
+            txtAHoTen.Enabled = false;
+            txtASdt.Enabled = false;
+            txtANgaySinh.Enabled = false;
+            txtAGioiTinh.Enabled = false;
+            txtAEmail.Enabled = false;
+            txtADiaChi.Enabled = false;
+            txtATaiKhoan.Enabled = false;
+            txtAPhanLoai.Enabled = false;
+        }  
     }
 }

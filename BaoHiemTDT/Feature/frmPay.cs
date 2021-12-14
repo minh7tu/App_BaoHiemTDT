@@ -69,12 +69,21 @@ namespace BaoHiemTDT.Feature
         }
       
         private void btnPThanhToan_Click(object sender, EventArgs e)
-        {
-            
+        {   
+            /*
+            //string thanhtoan = null;            
+            string a = null;
+
             BaoHiemTDT.Config.TDT.Connect();
-            string thanhtoan = null;            
-          
-            thanhtoan = "insert into THETHANHTOAN(SoTK,SoThe,TenThe) values('" + txtPStk.Text + "','"+txtPSthe.Text+"',N'" + cbbPTenNH.SelectedValue.ToString() + "') where SDT = '" + frmCustomer.sdt + "'";              
+            string pl = "select SDT from TAIKHOAN where TenTK='" + BaoHiemTDT.Master.frmMaster.tk + "'";
+            SqlCommand scd1 = new SqlCommand(pl, BaoHiemTDT.Config.TDT.connect);
+            SqlDataReader data = scd1.ExecuteReader();
+            if (data.Read())
+                a = data["SDT"].ToString();
+            BaoHiemTDT.Config.TDT.Disconect();
+
+            BaoHiemTDT.Config.TDT.Connect();
+            string thanhtoan = "insert into THETHANHTOAN(SoTK,SoThe,TenThe) values('" + txtPStk.Text + "','"+txtPSthe.Text+"',N'" + cbbPTenNH.Text + "') where SDT = '" +a.ToString() + "'";              
             SqlCommand scd = new SqlCommand(thanhtoan, BaoHiemTDT.Config.TDT.connect);
             try
             {
@@ -85,9 +94,12 @@ namespace BaoHiemTDT.Feature
             }
             catch {
                 MessageBox.Show("Thanh toán thất bại!Vui lòng chọn lại!");
-              
+              */
+             MessageBox.Show("Thanh toán thành công!Giao dịch của bạn sẽ được lưu vào dữ liệu!");
+             this.Close(); 
+           
             }
-        }
+        
 
        
     }

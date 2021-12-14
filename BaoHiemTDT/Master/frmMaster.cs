@@ -75,7 +75,8 @@ namespace BaoHiemTDT.Master
         //Đóng form
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+          
+           Application.Exit();
         }
         //Restore form
         private void btnMaximize_Click_1(object sender, EventArgs e)

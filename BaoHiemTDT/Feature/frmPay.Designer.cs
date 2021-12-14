@@ -94,7 +94,7 @@
             this.txtPStk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPStk.Name = "txtPStk";
             this.txtPStk.Size = new System.Drawing.Size(165, 22);
-            this.txtPStk.TabIndex = 4;
+            this.txtPStk.TabIndex = 3;
             this.txtPStk.TextChanged += new System.EventHandler(this.txtPStk_TextChanged);
             // 
             // btnPThanhToan
@@ -103,7 +103,7 @@
             this.btnPThanhToan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPThanhToan.Name = "btnPThanhToan";
             this.btnPThanhToan.Size = new System.Drawing.Size(136, 42);
-            this.btnPThanhToan.TabIndex = 5;
+            this.btnPThanhToan.TabIndex = 4;
             this.btnPThanhToan.Text = "Thanh toán";
             this.btnPThanhToan.UseVisualStyleBackColor = true;
             this.btnPThanhToan.Click += new System.EventHandler(this.btnPThanhToan_Click);
@@ -143,7 +143,7 @@
             this.txtPSthe.Location = new System.Drawing.Point(296, 310);
             this.txtPSthe.Name = "txtPSthe";
             this.txtPSthe.Size = new System.Drawing.Size(165, 22);
-            this.txtPSthe.TabIndex = 23;
+            this.txtPSthe.TabIndex = 2;
             this.txtPSthe.TextChanged += new System.EventHandler(this.txtPSthe_TextChanged);
             // 
             // frmPay

@@ -54,7 +54,7 @@ namespace BaoHiemTDT.Feature
             txtCTSdt.Enabled = false;
             txtCTTenBH.Enabled = false;
             rtbCTChiTiet.Enabled = false;
-
+            //Ket Noi de hien thi so dien thoai
             BaoHiemTDT.Config.TDT.Connect();
 
             string sodt = "select SDT from TAIKHOAN where TenTK='" + BaoHiemTDT.Master.frmMaster.tk.ToString() + "'";
@@ -64,6 +64,7 @@ namespace BaoHiemTDT.Feature
                 sdt = data0["SDT"].ToString();
 
             BaoHiemTDT.Config.TDT.Disconect();
+            //Ket noi de hien thi thong tin co ban cua khach hang
 
             BaoHiemTDT.Config.TDT.Connect();
             string tk = "select SDT,HoTen,NgaySinh,GioiTinh from KHACHHANG where SDT='" + sdt + "'";
@@ -77,6 +78,21 @@ namespace BaoHiemTDT.Feature
                 txtCTNgaySinh.Text = data["NgaySinh"].ToString();
                 txtCTGioiTinh.Text = data["GioiTinh"].ToString();
             }
+            BaoHiemTDT.Config.TDT.Disconect();
+            //Ket noi de hien thi so CCCD
+            BaoHiemTDT.Config.TDT.Connect();
+
+            string giayto = "Select MaGT from GIAYTO where SDT='"+txtCTSdt.Text+"'";
+            SqlCommand scd1 = new SqlCommand(giayto, BaoHiemTDT.Config.TDT.connect);
+            SqlDataReader data1 = scd1.ExecuteReader();
+
+            if (data1.Read())
+            {
+                txtCTCccd.Text = data1["MaGT"].ToString();
+            }
+            BaoHiemTDT.Config.TDT.Disconect();
+            //Ket noi de hien thi thong tin goi bao hiem
+           
         }
 
        
