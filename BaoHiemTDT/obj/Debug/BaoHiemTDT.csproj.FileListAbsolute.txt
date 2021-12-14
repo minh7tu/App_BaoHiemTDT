@@ -126,3 +126,6 @@ E:\BaoHiemNew\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csproj.GenerateResource
 E:\BẢo hiểm TDT xịn\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmAdmin.resources
 D:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmAdmin.resources
 E:\baohiem\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csprojResolveAssemblyReference.cache
+E:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmAdmin.resources
+E:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmAsset.resources
+E:\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmGovernment.resources

@@ -92,13 +92,29 @@ namespace BaoHiemTDT.Feature
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            string sdt = null;
+            BaoHiemTDT.Config.TDT.Connect();
+            string sdtt = "select SDT from TAIKHOAN where TenTK='" + BaoHiemTDT.Master.frmMaster.tk + "'";
+            SqlCommand scd11 = new SqlCommand(sdtt, BaoHiemTDT.Config.TDT.connect);
+            SqlDataReader data = scd11.ExecuteReader();
+
+            if (data.Read())
+                sdt = data["SDT"].ToString();
+
 
             BaoHiemTDT.Config.TDT.Connect();
-            string luu = "UPDATE KHACHHANG.,TAIKHOAN,GIAYTO,HOADON,THETHANHTOAN SET HoTen=N'" + txtAHoTen.Text +"',";
-            luu += "KHACHHANG.SDT='" + txtASdt.Text + "',NgaySinh='" + txtANgaySinh.Text + "',GioiTinh='" + txtAGioiTinh.Text + "',";
-            luu += "Email='" +txtAEmail.Text +"',DiaChi='" + txtADiaChi.Text + "',TenTK='" +txtATaiKhoan.Text +"',PhanLoai='" +txtAPhanLoai.Text+"',";
-            luu += "TAIKHOAN.SDT='" + txtASdt.Text + "',GIAYTO.SDT='" + txtASdt.Text + "',HOADON.SDT='" + txtASdt.Text + "',THETHANHTOAN.SDT='" + txtASdt.Text + "'";
-            luu += "WHERE KHACHHANG.SDT=TAIKHOAN and KHACHHANG.SDT=GIAYTO.SDT and KHACHHANG.SDT=HOADON.SDT and KHACHHANG.SDT=THETHANHTOAN.SDT";
+            string updateAccout = "update TAIKHOAN set TenTK='" + txtATaiKhoan.Text + "',PhanLoai='" + txtAPhanLoai.Text + "' where SDT ='" + sdt + "'";
+            SqlCommand scd = new SqlCommand(updateAccout, BaoHiemTDT.Config.TDT.connect);
+            scd.ExecuteNonQuery();
+            BaoHiemTDT.Config.TDT.Disconect();
+
+            //BaoHiemTDT.Config.TDT.Connect();
+            //string updateCustom = "update KHACHHANG set HoTen=N'" + txtAHoTen.Text + "',GioiTinh='" + txtAGioiTinh.Text + "',Email='" + txtAEmail.Text + "',DiaChi='" + txtADiaChi.Text + "'";
+            //updateCustom += "where SDT='" + sdt + "'";
+            //SqlCommand scd12 = new SqlCommand(updateCustom, BaoHiemTDT.Config.TDT.connect);
+            //scd12.ExecuteNonQuery();
+            //BaoHiemTDT.Config.TDT.Disconect();
+
             txtAHoTen.Enabled = false;
             txtASdt.Enabled = false;
             txtANgaySinh.Enabled = false;

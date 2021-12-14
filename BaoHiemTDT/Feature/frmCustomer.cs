@@ -97,8 +97,6 @@ namespace BaoHiemTDT.Feature
             txtGioiTinh.Enabled = true;
             txtHoTen.Enabled = true;
             txtNgaySinh.Enabled = true;
-            txtSDT.Enabled = true;
-            cbbTenGT.Enabled = true;
             txtSo.Enabled = true;
             txtNgayCap.Enabled = true;
             txtNoiCap.Enabled = true;
@@ -111,25 +109,22 @@ namespace BaoHiemTDT.Feature
             //Viết câu lệnh update dữ liệu
             BaoHiemTDT.Config.TDT.Connect();
             
-            //khai báo câu lệnh cập nhật dữ liệu
-            string capnhat = "update KHACHHANG,HOADON,GIAYTO,TAIKHOAN,THETHANHTOAN set KHACHHANG.SDT='" + txtSDT.Text + "',HoTen=N'" + txtHoTen.Text + "',";
-            capnhat += "GioiTinh=N'" + txtGioiTinh.Text + "',Email='" + txtEmail.Text + "',";
-            capnhat +="Diachi=N'" + txtDiaChi.Text + "',MaGT="+txtSo.Text+"',TenGT=N'"+cbbTenGT.Text+"',";
-            capnhat += "NgayCap=N'" + txtNgayCap.Text + "',NoiCap=N'" + txtNoiCap.Text + "',GIAYTO.SDT='" + txtSDT.Text + "',";
-            capnhat += "HOADON.SDT='" + txtSDT.Text + "',TAIKHOAN.SDT='" + txtSDT.Text + "',THETHANHTOAN.SDT='" + txtSDT.Text + "'"; 
-            capnhat += "where KHACHHANG.SDT=HOADON.SDT and KHACHHANG.SDT=GIAYTO.SDT and KHACHHANG.SDT=TAIKHOAN.SDT and KHACHHANG.SDT=THETHANHTOAN.SDT";
+            //khai báo câu lệnh cập nhật dữ liệu cập nhập thông tin bảng khách hàng
+            string updateInfo = "update KHACHHANG set HoTen=N'" + txtHoTen.Text + "',GioiTinh=N'" + txtGioiTinh.Text + "',Email='" + txtEmail.Text + "',";
+            updateInfo += "DiaChi='" + txtDiaChi.Text + "' where SDT='" + frmCustomer.sdt + "'";
 
-            SqlCommand scd = new SqlCommand(capnhat, BaoHiemTDT.Config.TDT.connect);
-
-            try
-            {
-                scd.ExecuteNonQuery();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            SqlCommand scd = new SqlCommand(updateInfo, BaoHiemTDT.Config.TDT.connect);
+            scd.ExecuteNonQuery();
             BaoHiemTDT.Config.TDT.Disconect();
+            
+            BaoHiemTDT.Config.TDT.Connect();
+
+            string updateGT = "update GIAYTO set MaGT='" + txtSo.Text + "',TenGT='" + cbbTenGT.Text + "',NoiCap=N'" + txtNoiCap.Text + "'";
+            updateGT += "Where SDT='" + frmCustomer.sdt + "'";
+
+            SqlCommand scd1 = new SqlCommand(updateGT, BaoHiemTDT.Config.TDT.connect);
+            scd1.ExecuteNonQuery();
+           
             //Ẩn nút lưu
             btnSave.Visible = false;
             //Chỉ cho phép đọc dữ liệu
