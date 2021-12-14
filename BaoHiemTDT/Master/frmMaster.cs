@@ -41,7 +41,23 @@ namespace BaoHiemTDT.Master
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.notify.ContextMenuStrip = this.contextMenuStrip;
 
-            btnProduct.Enabled = false;
+            string a = null;
+
+            BaoHiemTDT.Config.TDT.Connect();
+            string pl = "select PhanLoai from TAIKHOAN where TenTK='" + frmMaster.tk + "'";
+            SqlCommand scd = new SqlCommand(pl, BaoHiemTDT.Config.TDT.connect);
+            SqlDataReader data = scd.ExecuteReader();
+
+
+            if (data.Read())
+                a = data["PhanLoai"].ToString();
+
+            if (a == "0")
+                btnProduct.Enabled = false;
+            else
+                btnProduct.Enabled = true;
+                
+           
         }
 
         [DllImport("user32.DLL",EntryPoint="ReleaseCapture")]

@@ -40,6 +40,8 @@ namespace BaoHiemTDT.Feature
 
         private void frmContract_Load(object sender, EventArgs e)
         {
+            string sdt = null;
+
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 
             btnCTDongY.Enabled = false;
@@ -55,7 +57,16 @@ namespace BaoHiemTDT.Feature
 
             BaoHiemTDT.Config.TDT.Connect();
 
-            string tk = "select SDT,HoTen,NgaySinh,GioiTinh from KHACHHANG where SDT='" + frmCustomer.sdt + "'";
+            string sodt = "select SDT from TAIKHOAN where TenTK='" + BaoHiemTDT.Master.frmMaster.tk.ToString() + "'";
+            SqlCommand scd0 = new SqlCommand(sodt, BaoHiemTDT.Config.TDT.connect);
+            SqlDataReader data0 = scd0.ExecuteReader();
+            if (data0.Read())
+                sdt = data0["SDT"].ToString();
+
+            BaoHiemTDT.Config.TDT.Disconect();
+
+            BaoHiemTDT.Config.TDT.Connect();
+            string tk = "select SDT,HoTen,NgaySinh,GioiTinh from KHACHHANG where SDT='" + sdt + "'";
             SqlCommand scd = new SqlCommand(tk, BaoHiemTDT.Config.TDT.connect);
             SqlDataReader data = scd.ExecuteReader();
 
