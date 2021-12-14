@@ -55,12 +55,12 @@
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.ptbSucKhoe = new System.Windows.Forms.PictureBox();
-            this.lblSucKhoe = new System.Windows.Forms.Label();
-            this.btnSucKhoe = new System.Windows.Forms.Button();
+            this.lblBatBuoc = new System.Windows.Forms.Label();
+            this.btnBatBuoc = new System.Windows.Forms.Button();
             this.panel9 = new System.Windows.Forms.Panel();
             this.ptbYTe = new System.Windows.Forms.PictureBox();
-            this.lblYTe = new System.Windows.Forms.Label();
-            this.btnYTe = new System.Windows.Forms.Button();
+            this.lblTuNguyen = new System.Windows.Forms.Label();
+            this.btnTuNguyen = new System.Windows.Forms.Button();
             this.grbPhiNhanTho = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -154,6 +154,7 @@
             this.btnChamSocSK.TabIndex = 3;
             this.btnChamSocSK.Text = "button5";
             this.btnChamSocSK.UseVisualStyleBackColor = false;
+            this.btnChamSocSK.Click += new System.EventHandler(this.btnChamSocSK_Click);
             // 
             // grbNhanTho
             // 
@@ -235,6 +236,7 @@
             this.btnTrongNuoc.Size = new System.Drawing.Size(139, 75);
             this.btnTrongNuoc.TabIndex = 0;
             this.btnTrongNuoc.UseVisualStyleBackColor = false;
+            this.btnTrongNuoc.Click += new System.EventHandler(this.btnTrongNuoc_Click);
             // 
             // panel1
             // 
@@ -285,6 +287,7 @@
             this.btnQuocTe.Size = new System.Drawing.Size(139, 75);
             this.btnQuocTe.TabIndex = 1;
             this.btnQuocTe.UseVisualStyleBackColor = false;
+            this.btnQuocTe.Click += new System.EventHandler(this.btnQuocTe_Click);
             // 
             // panel6
             // 
@@ -335,6 +338,7 @@
             this.btnAli.TabIndex = 2;
             this.btnAli.Text = "button5";
             this.btnAli.UseVisualStyleBackColor = false;
+            this.btnAli.Click += new System.EventHandler(this.btnAli_Click);
             // 
             // btnComQLai
             // 
@@ -413,8 +417,8 @@
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.ptbSucKhoe);
-            this.panel8.Controls.Add(this.lblSucKhoe);
-            this.panel8.Controls.Add(this.btnSucKhoe);
+            this.panel8.Controls.Add(this.lblBatBuoc);
+            this.panel8.Controls.Add(this.btnBatBuoc);
             this.panel8.Location = new System.Drawing.Point(2, 2);
             this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
@@ -431,39 +435,40 @@
             this.ptbSucKhoe.TabIndex = 3;
             this.ptbSucKhoe.TabStop = false;
             // 
-            // lblSucKhoe
+            // lblBatBuoc
             // 
-            this.lblSucKhoe.AutoSize = true;
-            this.lblSucKhoe.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSucKhoe.Location = new System.Drawing.Point(4, 53);
-            this.lblSucKhoe.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblSucKhoe.Name = "lblSucKhoe";
-            this.lblSucKhoe.Size = new System.Drawing.Size(117, 13);
-            this.lblSucKhoe.TabIndex = 2;
-            this.lblSucKhoe.Text = "Bảo Hiểm Bắt Buộc";
+            this.lblBatBuoc.AutoSize = true;
+            this.lblBatBuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBatBuoc.Location = new System.Drawing.Point(4, 53);
+            this.lblBatBuoc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBatBuoc.Name = "lblBatBuoc";
+            this.lblBatBuoc.Size = new System.Drawing.Size(117, 13);
+            this.lblBatBuoc.TabIndex = 2;
+            this.lblBatBuoc.Text = "Bảo Hiểm Bắt Buộc";
             // 
-            // btnSucKhoe
+            // btnBatBuoc
             // 
-            this.btnSucKhoe.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSucKhoe.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnSucKhoe.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnSucKhoe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnSucKhoe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnSucKhoe.Font = new System.Drawing.Font("Microsoft Sans Serif", 4.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSucKhoe.Location = new System.Drawing.Point(0, 0);
-            this.btnSucKhoe.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSucKhoe.Name = "btnSucKhoe";
-            this.btnSucKhoe.Size = new System.Drawing.Size(139, 75);
-            this.btnSucKhoe.TabIndex = 0;
-            this.btnSucKhoe.Text = "button1";
-            this.btnSucKhoe.UseVisualStyleBackColor = false;
+            this.btnBatBuoc.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnBatBuoc.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnBatBuoc.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnBatBuoc.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnBatBuoc.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnBatBuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 4.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBatBuoc.Location = new System.Drawing.Point(0, 0);
+            this.btnBatBuoc.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBatBuoc.Name = "btnBatBuoc";
+            this.btnBatBuoc.Size = new System.Drawing.Size(139, 75);
+            this.btnBatBuoc.TabIndex = 0;
+            this.btnBatBuoc.Text = "button1";
+            this.btnBatBuoc.UseVisualStyleBackColor = false;
+            this.btnBatBuoc.Click += new System.EventHandler(this.btnBatBuoc_Click);
             // 
             // panel9
             // 
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.ptbYTe);
-            this.panel9.Controls.Add(this.lblYTe);
-            this.panel9.Controls.Add(this.btnYTe);
+            this.panel9.Controls.Add(this.lblTuNguyen);
+            this.panel9.Controls.Add(this.btnTuNguyen);
             this.panel9.Location = new System.Drawing.Point(147, 2);
             this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
@@ -480,32 +485,33 @@
             this.ptbYTe.TabIndex = 3;
             this.ptbYTe.TabStop = false;
             // 
-            // lblYTe
+            // lblTuNguyen
             // 
-            this.lblYTe.AutoSize = true;
-            this.lblYTe.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYTe.Location = new System.Drawing.Point(10, 53);
-            this.lblYTe.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblYTe.Name = "lblYTe";
-            this.lblYTe.Size = new System.Drawing.Size(127, 13);
-            this.lblYTe.TabIndex = 3;
-            this.lblYTe.Text = "Bảo Hiểm Tự Nguyện";
+            this.lblTuNguyen.AutoSize = true;
+            this.lblTuNguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTuNguyen.Location = new System.Drawing.Point(10, 53);
+            this.lblTuNguyen.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblTuNguyen.Name = "lblTuNguyen";
+            this.lblTuNguyen.Size = new System.Drawing.Size(127, 13);
+            this.lblTuNguyen.TabIndex = 3;
+            this.lblTuNguyen.Text = "Bảo Hiểm Tự Nguyện";
             // 
-            // btnYTe
+            // btnTuNguyen
             // 
-            this.btnYTe.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnYTe.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnYTe.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnYTe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnYTe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnYTe.Font = new System.Drawing.Font("Microsoft Sans Serif", 4.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnYTe.Location = new System.Drawing.Point(0, 0);
-            this.btnYTe.Margin = new System.Windows.Forms.Padding(2);
-            this.btnYTe.Name = "btnYTe";
-            this.btnYTe.Size = new System.Drawing.Size(139, 75);
-            this.btnYTe.TabIndex = 1;
-            this.btnYTe.Text = "button9";
-            this.btnYTe.UseVisualStyleBackColor = false;
+            this.btnTuNguyen.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnTuNguyen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnTuNguyen.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnTuNguyen.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnTuNguyen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnTuNguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 4.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTuNguyen.Location = new System.Drawing.Point(0, 0);
+            this.btnTuNguyen.Margin = new System.Windows.Forms.Padding(2);
+            this.btnTuNguyen.Name = "btnTuNguyen";
+            this.btnTuNguyen.Size = new System.Drawing.Size(139, 75);
+            this.btnTuNguyen.TabIndex = 1;
+            this.btnTuNguyen.Text = "button9";
+            this.btnTuNguyen.UseVisualStyleBackColor = false;
+            this.btnTuNguyen.Click += new System.EventHandler(this.btnTuNguyen_Click);
             // 
             // grbPhiNhanTho
             // 
@@ -588,6 +594,7 @@
             this.btnBaoViet.Size = new System.Drawing.Size(139, 75);
             this.btnBaoViet.TabIndex = 0;
             this.btnBaoViet.UseVisualStyleBackColor = false;
+            this.btnBaoViet.Click += new System.EventHandler(this.btnBaoViet_Click);
             // 
             // panel5
             // 
@@ -616,6 +623,7 @@
             this.btnPVi.TabIndex = 1;
             this.btnPVi.Text = "button5";
             this.btnPVi.UseVisualStyleBackColor = false;
+            this.btnPVi.Click += new System.EventHandler(this.btnPVi_Click);
             // 
             // frmGovernment
             // 
@@ -685,12 +693,12 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.PictureBox ptbSucKhoe;
-        private System.Windows.Forms.Label lblSucKhoe;
-        private System.Windows.Forms.Button btnSucKhoe;
+        private System.Windows.Forms.Label lblBatBuoc;
+        private System.Windows.Forms.Button btnBatBuoc;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.PictureBox ptbYTe;
-        private System.Windows.Forms.Label lblYTe;
-        private System.Windows.Forms.Button btnYTe;
+        private System.Windows.Forms.Label lblTuNguyen;
+        private System.Windows.Forms.Button btnTuNguyen;
         private System.Windows.Forms.GroupBox grbPhiNhanTho;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Panel panel4;

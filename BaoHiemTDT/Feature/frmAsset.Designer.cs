@@ -170,6 +170,7 @@
             this.btnRuiDoCongNghiep.TabIndex = 0;
             this.btnRuiDoCongNghiep.Text = "Rủi Ro công Nghiệp";
             this.btnRuiDoCongNghiep.UseVisualStyleBackColor = false;
+            this.btnRuiDoCongNghiep.Click += new System.EventHandler(this.btnRuiDoCongNghiep_Click);
             // 
             // panel5
             // 
@@ -218,6 +219,7 @@
             this.btnTaiKhoanTrucTuyen.Size = new System.Drawing.Size(139, 75);
             this.btnTaiKhoanTrucTuyen.TabIndex = 1;
             this.btnTaiKhoanTrucTuyen.UseVisualStyleBackColor = false;
+            this.btnTaiKhoanTrucTuyen.Click += new System.EventHandler(this.btnTaiKhoanTrucTuyen_Click);
             // 
             // panel6
             // 
@@ -267,6 +269,7 @@
             this.btnThuongHieu.TabIndex = 1;
             this.btnThuongHieu.Text = "button1";
             this.btnThuongHieu.UseVisualStyleBackColor = false;
+            this.btnThuongHieu.Click += new System.EventHandler(this.btnThuongHieu_Click);
             // 
             // panel7
             // 
@@ -316,6 +319,7 @@
             this.btnTromCap.TabIndex = 1;
             this.btnTromCap.Text = "button1";
             this.btnTromCap.UseVisualStyleBackColor = false;
+            this.btnTromCap.Click += new System.EventHandler(this.btnTromCap_Click);
             // 
             // tableLayoutPanel2
             // 
@@ -384,6 +388,7 @@
             this.btnChayNoBatBuoc.TabIndex = 0;
             this.btnChayNoBatBuoc.Text = "button1";
             this.btnChayNoBatBuoc.UseVisualStyleBackColor = false;
+            this.btnChayNoBatBuoc.Click += new System.EventHandler(this.btnChayNoBatBuoc_Click);
             // 
             // panel1
             // 
@@ -433,6 +438,7 @@
             this.btnHoaHoanVaRuiro.TabIndex = 1;
             this.btnHoaHoanVaRuiro.Text = "button1";
             this.btnHoaHoanVaRuiro.UseVisualStyleBackColor = false;
+            this.btnHoaHoanVaRuiro.Click += new System.EventHandler(this.btnHoaHoanVaRuiro_Click);
             // 
             // panel2
             // 
@@ -482,6 +488,7 @@
             this.btnRuiRoTaiSan.TabIndex = 1;
             this.btnRuiRoTaiSan.Text = "button1";
             this.btnRuiRoTaiSan.UseVisualStyleBackColor = false;
+            this.btnRuiRoTaiSan.Click += new System.EventHandler(this.btnRuiRoTaiSan_Click);
             // 
             // panel3
             // 
@@ -531,6 +538,7 @@
             this.btnGianDoanKinhDoanh.TabIndex = 1;
             this.btnGianDoanKinhDoanh.Text = "button1";
             this.btnGianDoanKinhDoanh.UseVisualStyleBackColor = false;
+            this.btnGianDoanKinhDoanh.Click += new System.EventHandler(this.btnGianDoanKinhDoanh_Click);
             // 
             // btnComQLai
             // 

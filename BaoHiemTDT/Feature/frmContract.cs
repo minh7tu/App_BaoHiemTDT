@@ -82,7 +82,7 @@ namespace BaoHiemTDT.Feature
             //Ket noi de hien thi so CCCD
             BaoHiemTDT.Config.TDT.Connect();
 
-            string giayto = "Select MaGT from GIAYTO where SDT='"+txtCTSdt.Text+"'";
+            string giayto = "Select MaGT from GIAYTO where SDT='" + txtCTSdt.Text + "'";
             SqlCommand scd1 = new SqlCommand(giayto, BaoHiemTDT.Config.TDT.connect);
             SqlDataReader data1 = scd1.ExecuteReader();
 
@@ -92,11 +92,10 @@ namespace BaoHiemTDT.Feature
             }
             BaoHiemTDT.Config.TDT.Disconect();
             //Ket noi de hien thi thong tin goi bao hiem
-           
+            txtCTTenBH.Text = BaoHiemTDT.Config.TDT.bh;
+            txtCTNgayMua.Text = DateTime.Now.Date.ToShortDateString();
+
         }
-
-       
-
        
     }
 }

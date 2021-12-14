@@ -13,7 +13,7 @@ namespace BaoHiemTDT.Feature
 {
     public partial class frmRegister : Form
     {
-        string connectionString ="";
+        //string connectionString ="";
         public frmRegister()
         {
             InitializeComponent();

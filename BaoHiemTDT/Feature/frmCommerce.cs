@@ -11,6 +11,8 @@ namespace BaoHiemTDT.Feature
 {
     public partial class frmCommerce : Form
     {
+        BaoHiemTDT.Config.TDT tdt = new Config.TDT();
+
         public frmCommerce()
         {
             InitializeComponent();
@@ -18,73 +20,73 @@ namespace BaoHiemTDT.Feature
 
         private void btnSinhKy_Click(object sender, EventArgs e)
         {
-            frmContract sinhky = new frmContract();
-            sinhky.ShowDialog();
+            BaoHiemTDT.Config.TDT.bh = lblSinhKy.Text;
+            tdt.openPay();
         }
 
  
         private void btnTuKy_Click(object sender, EventArgs e)
         {
-            frmContract tuky = new frmContract();
-            tuky.ShowDialog();
+            BaoHiemTDT.Config.TDT.bh = lblTuKy.Text;
+            tdt.openPay();
         }
         private void btnTronDoi_Click(object sender, EventArgs e)
         {
-            frmContract trondoi = new frmContract();
-            trondoi.ShowDialog();
+            BaoHiemTDT.Config.TDT.bh = lblTronDoi.Text;
+            tdt.openPay();
         }
 
         private void btnHonHop_Click(object sender, EventArgs e)
         {
-            frmContract honhop = new frmContract();
-            honhop.ShowDialog();
+            BaoHiemTDT.Config.TDT.bh = lblHonHop.Text;
+            tdt.openPay();
         }
         private void btnHangHoa_Click(object sender, EventArgs e)
         {
-            frmContract hanghoa = new frmContract();
-            hanghoa.ShowDialog();
+            BaoHiemTDT.Config.TDT.bh = lblHangHoa.Text;
+            tdt.openPay();
         }
 
         private void btnChayNo_Click(object sender, EventArgs e)
         {
-            frmContract chayno = new frmContract();
-            chayno.ShowDialog();
+            BaoHiemTDT.Config.TDT.bh = lblChayNo.Text;
+            tdt.openPay();
         }
 
         private void btnTaiSan_Click(object sender, EventArgs e)
         {
-            frmContract taisan = new frmContract();
-            taisan.ShowDialog();
+            BaoHiemTDT.Config.TDT.bh = lblTaiSan.Text;
+            tdt.openPay();
         }
 
         private void btnXeCoGioi_Click(object sender, EventArgs e)
         {
-            frmContract xecogioi = new frmContract();
-            xecogioi.ShowDialog();
+            BaoHiemTDT.Config.TDT.bh = lblXeCoGioi.Text;
+            tdt.openPay();
         }
 
         private void btnSucKhoe_Click(object sender, EventArgs e)
         {
-            frmContract suckhoe = new frmContract();
-            suckhoe.ShowDialog();
+            BaoHiemTDT.Config.TDT.bh = lblSucKhoe.Text;
+            tdt.openPay();
         }
 
         private void btnYTe_Click(object sender, EventArgs e)
         {
-            frmContract yte = new frmContract();
-            yte.ShowDialog();
+            BaoHiemTDT.Config.TDT.bh = lblYTe.Text;
+            tdt.openPay();
         }
 
         private void btnChamSoc_Click(object sender, EventArgs e)
         {
-            frmContract chamsoc = new frmContract();
-            chamsoc.ShowDialog();
+            BaoHiemTDT.Config.TDT.bh = lblChamSoc.Text;
+            tdt.openPay();
         }
 
         private void btnTaiNan_Click(object sender, EventArgs e)
         {
-            frmContract tainan = new frmContract();
-            tainan.ShowDialog();
+            BaoHiemTDT.Config.TDT.bh = lblTaiNan.Text;
+            tdt.openPay();
         }
 
 

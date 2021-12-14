@@ -10,6 +10,7 @@ namespace BaoHiemTDT.Config
     class TDT
     {
         public static SqlConnection connect;
+        public static string bh;
 
         public TDT()
         { 
@@ -21,9 +22,9 @@ namespace BaoHiemTDT.Config
             //Dai
             //string str = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=E:\baohiem\BaoHiemTDT\BaoHiemTDT\Data\BaoHiemTDT.mdf;Integrated Security=True";
             //Thuyet
-            //string str = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\BaoHiemTDT\BaoHiemTDT\Data\BaoHiemTDT.mdf;Integrated Security=True";
+            string str = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=D:\BaoHiemTDT\BaoHiemTDT\Data\BaoHiemTDT.mdf;Integrated Security=True";
             //Tu
-            string str = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=E:\BaoHiemTDT\BaoHiemTDT\Data\BaoHiemTDT.mdf;Integrated Security=True";
+            //string str = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=E:\BaoHiemTDT\BaoHiemTDT\Data\BaoHiemTDT.mdf;Integrated Security=True";
        
             connect = new SqlConnection(str);
             connect.Open();
@@ -37,6 +38,12 @@ namespace BaoHiemTDT.Config
                 connect.Dispose();//Giải phóng tài nguyên
                 connect = null;
             }
+        }
+
+        public void openPay()
+        {
+            BaoHiemTDT.Feature.frmContract ct = new BaoHiemTDT.Feature.frmContract();
+            ct.ShowDialog();
         }
       
     }

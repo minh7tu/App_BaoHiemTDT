@@ -25,7 +25,7 @@ namespace BaoHiemTDT.Feature
             lblCheckTK.Visible = false;
             lblCheckSDT.Visible = false;
 
-
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 
         }
 
