@@ -29,7 +29,11 @@ namespace BaoHiemTDT.Feature
             txtHoTen.Enabled = false;
             txtNgaySinh.Enabled = false;
             txtSDT.Enabled = false;
-
+            cbbTenGT.Enabled = false;
+            txtSo.Enabled = false;
+            txtNgayCap.Enabled = false;
+            txtNoiCap.Enabled = false;
+            
             BaoHiemTDT.Config.TDT.Connect();
             try
             {
@@ -54,13 +58,31 @@ namespace BaoHiemTDT.Feature
                     txtNgaySinh.Text = dt["NgaySinh"].ToString();
                     txtEmail.Text = dt["Email"].ToString();
                     txtDiaChi.Text = dt["DiaChi"].ToString();
+                   
+                    
                 }
+                //BaoHiemTDT.Config.TDT.Disconect();
+
+                BaoHiemTDT.Config.TDT.Connect();
+                string giayto = "select * from GIAYTO where SDT='" + txtSDT.Text + "'";
+                SqlCommand scd1 = new SqlCommand(giayto, BaoHiemTDT.Config.TDT.connect);
+                SqlDataReader data1 = scd1.ExecuteReader();
+                if (data1.Read())
+                {
+                    cbbTenGT.Text = data1["TenGT"].ToString();
+                    txtSo.Text = data1["MaGT"].ToString();
+                    txtNgayCap.Text = data1["NgayCap"].ToString();
+                    txtNoiCap.Text = data1["NoiCap"].ToString();
+                }
+                //BaoHiemTDT.Config.TDT.Disconect();
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
             BaoHiemTDT.Config.TDT.Disconect();
+           
 
 
         }
@@ -76,6 +98,12 @@ namespace BaoHiemTDT.Feature
             txtHoTen.Enabled = true;
             txtNgaySinh.Enabled = true;
             txtSDT.Enabled = true;
+            cbbTenGT.Enabled = true;
+            txtSo.Enabled = true;
+            txtNgayCap.Enabled = true;
+            txtNoiCap.Enabled = true;
+        
+        
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -84,7 +112,12 @@ namespace BaoHiemTDT.Feature
             BaoHiemTDT.Config.TDT.Connect();
             
             //khai báo câu lệnh cập nhật dữ liệu
-            string capnhat = "update KHACHHANG set SDT='" + txtSDT.Text + "',HoTen=N'" + txtHoTen.Text + "',GioiTinh=N'" + txtGioiTinh.Text + "',Email='" + txtEmail.Text + "',Diachi=N'" + txtDiaChi.Text + "' where SDT='" + txtSDT.Text + "'";
+            string capnhat = "update KHACHHANG set KHACHHANG.SDT='" + txtSDT.Text + "',HoTen=N'" + txtHoTen.Text + "',";
+            capnhat += "GioiTinh=N'" + txtGioiTinh.Text + "',Email='" + txtEmail.Text + "',";
+            capnhat +="Diachi=N'" + txtDiaChi.Text + "',MaGT="+txtSo.Text+"',TenGT=N'"+cbbTenGT.Text+"',";
+            capnhat += "NgayCap=N'" + txtNgayCap.Text + "',NoiCap=N'" + txtNoiCap.Text + "',GIAYTO.SDT='" + txtSDT.Text + "',";
+            capnhat += "HOADON.SDT='" + txtSDT.Text + "',TAIKHOAN.SDT='" + txtSDT.Text + "',THETHANHTOAN.SDT='" + txtSDT.Text + "'"; 
+            capnhat += "where SDT='" + txtSDT.Text + "'";
 
             SqlCommand scd = new SqlCommand(capnhat, BaoHiemTDT.Config.TDT.connect);
 
@@ -106,6 +139,13 @@ namespace BaoHiemTDT.Feature
             txtHoTen.Enabled = false;
             txtNgaySinh.Enabled = false;
             txtSDT.Enabled = false;
+            cbbTenGT.Enabled = false;
+            txtSo.Enabled = false;
+            txtNgayCap.Enabled = false;
+            txtNoiCap.Enabled = false;
+
+
+
         }
     }
 }

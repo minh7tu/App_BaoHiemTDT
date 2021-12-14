@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
 using System.Threading;
+using System.Data.SqlClient;
 
 namespace BaoHiemTDT.Master
 {
@@ -114,8 +115,29 @@ namespace BaoHiemTDT.Master
         //Xem thông tin khách , đóng form hiện tại
         private void btnCustomer_Click(object sender, EventArgs e)
         {
-            btnProduct.Enabled = true;
-            openChildForm(new frmCustomer(), sender);
+
+            string a = null ;
+
+            BaoHiemTDT.Config.TDT.Connect();
+            string pl = "select PhanLoai from TAIKHOAN where TenTK='" + frmMaster.tk + "'";
+            SqlCommand scd = new SqlCommand(pl, BaoHiemTDT.Config.TDT.connect);
+            SqlDataReader data = scd.ExecuteReader();
+
+
+            if (data.Read())
+                a = data["PhanLoai"].ToString();
+
+            if (a == "0")
+            {
+                btnProduct.Enabled = false;
+                openChildForm(new frmAdmin(), sender);
+                
+            }
+            else
+            {
+                btnProduct.Enabled = true;
+                openChildForm(new frmCustomer(), sender);
+            }
         }
         //Chọn product , đóng form hiện tại
         private void btnProduct_Click(object sender, EventArgs e)

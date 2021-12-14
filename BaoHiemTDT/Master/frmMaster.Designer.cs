@@ -154,7 +154,7 @@
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Size = new System.Drawing.Size(200, 65);
             this.btnCustomer.TabIndex = 6;
-            this.btnCustomer.Text = "Thông tin tài khoản";
+            this.btnCustomer.Text = "Tài khoản";
             this.btnCustomer.UseVisualStyleBackColor = true;
             this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
             // 

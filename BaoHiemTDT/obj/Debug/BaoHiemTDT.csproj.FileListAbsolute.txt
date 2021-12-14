@@ -124,3 +124,4 @@ E:\BaoHiemNew\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmRegister.res
 E:\BaoHiemNew\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Master.frmMaster.resources
 E:\BaoHiemNew\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Properties.Resources.resources
 E:\BaoHiemNew\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.csproj.GenerateResource.Cache
+E:\BẢo hiểm TDT xịn\BaoHiemTDT\BaoHiemTDT\obj\Debug\BaoHiemTDT.Feature.frmAdmin.resources
