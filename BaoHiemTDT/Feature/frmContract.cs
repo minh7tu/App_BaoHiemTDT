@@ -43,7 +43,7 @@ namespace BaoHiemTDT.Feature
             string sdt = null;
 
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            btnCTDongY.Visible = true;
+            btnCTDongY.Enabled = false;
 
             //Ket Noi de hien thi so dien thoai
             BaoHiemTDT.Config.TDT.Connect();
