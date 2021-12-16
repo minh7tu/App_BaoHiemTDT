@@ -427,6 +427,7 @@
             // 
             // ptbSucKhoe
             // 
+            this.ptbSucKhoe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptbSucKhoe.BackgroundImage")));
             this.ptbSucKhoe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptbSucKhoe.Location = new System.Drawing.Point(29, 10);
             this.ptbSucKhoe.Margin = new System.Windows.Forms.Padding(2);
@@ -477,6 +478,7 @@
             // 
             // ptbYTe
             // 
+            this.ptbYTe.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ptbYTe.BackgroundImage")));
             this.ptbYTe.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ptbYTe.Location = new System.Drawing.Point(33, 10);
             this.ptbYTe.Margin = new System.Windows.Forms.Padding(2);
