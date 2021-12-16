@@ -47,10 +47,13 @@
             this.tSMItemLogin = new System.Windows.Forms.ToolStripMenuItem();
             this.tSMItemClose = new System.Windows.Forms.ToolStripMenuItem();
             this.paneChild = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.contextMenuStrip.SuspendLayout();
+            this.paneChild.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -269,13 +272,26 @@
             // 
             // paneChild
             // 
+            this.paneChild.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(239)))));
             this.paneChild.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.paneChild.Controls.Add(this.pictureBox2);
             this.paneChild.Dock = System.Windows.Forms.DockStyle.Fill;
             this.paneChild.Location = new System.Drawing.Point(267, 37);
             this.paneChild.Margin = new System.Windows.Forms.Padding(4);
             this.paneChild.Name = "paneChild";
             this.paneChild.Size = new System.Drawing.Size(1068, 634);
             this.paneChild.TabIndex = 7;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox2.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1066, 632);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // frmMaster
             // 
@@ -299,6 +315,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.contextMenuStrip.ResumeLayout(false);
+            this.paneChild.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -322,6 +340,7 @@
         private System.Windows.Forms.ToolStripMenuItem tSMItemClose;
         private System.Windows.Forms.Label lblName;
         public System.Windows.Forms.Panel paneChild;
+        private System.Windows.Forms.PictureBox pictureBox2;
 
     }
 }
