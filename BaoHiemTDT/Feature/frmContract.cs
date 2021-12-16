@@ -44,16 +44,6 @@ namespace BaoHiemTDT.Feature
 
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 
-            btnCTDongY.Enabled = false;
-            txtCTCccd.Enabled = false;
-            txtCTChiPhi.Enabled = false;
-            txtCTGioiTinh.Enabled = false;
-            txtCTHoTen.Enabled = false;
-            txtCTNgayMua.Enabled = false;
-            txtCTNgaySinh.Enabled = false;
-            txtCTSdt.Enabled = false;
-            txtCTTenBH.Enabled = false;
-            rtbCTChiTiet.Enabled = false;
             //Ket Noi de hien thi so dien thoai
             BaoHiemTDT.Config.TDT.Connect();
 
@@ -93,8 +83,19 @@ namespace BaoHiemTDT.Feature
             BaoHiemTDT.Config.TDT.Disconect();
             //Ket noi de hien thi thong tin goi bao hiem
             txtCTTenBH.Text = BaoHiemTDT.Config.TDT.bh;
-            txtCTNgayMua.Text = DateTime.Now.Date.ToShortDateString();
+            txtCTNgayMua.Text = DateTime.Today.Date.ToShortDateString();
+            
+            BaoHiemTDT.Config.TDT.Connect();
+            string bh = "select * from CHITIETBAOHIEM where TenCTBH=N'" + txtCTTenBH.Text + "'";
+            SqlCommand scd2 = new SqlCommand(bh, BaoHiemTDT.Config.TDT.connect);
+            SqlDataReader data2 = scd2.ExecuteReader();
 
+            if (data2.Read())
+            {
+                txtCTChiPhi.Text = data2["ChiPhi"].ToString();
+                rtbCTChiTiet.Text = data2["MoTa"].ToString();
+            }
+            BaoHiemTDT.Config.TDT.Disconect();
         }
        
     }

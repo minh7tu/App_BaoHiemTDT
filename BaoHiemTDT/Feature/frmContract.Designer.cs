@@ -187,6 +187,7 @@
             this.txtCTHoTen.Location = new System.Drawing.Point(176, 182);
             this.txtCTHoTen.Margin = new System.Windows.Forms.Padding(2);
             this.txtCTHoTen.Name = "txtCTHoTen";
+            this.txtCTHoTen.ReadOnly = true;
             this.txtCTHoTen.Size = new System.Drawing.Size(144, 20);
             this.txtCTHoTen.TabIndex = 13;
             // 
@@ -195,6 +196,7 @@
             this.txtCTGioiTinh.Location = new System.Drawing.Point(176, 206);
             this.txtCTGioiTinh.Margin = new System.Windows.Forms.Padding(2);
             this.txtCTGioiTinh.Name = "txtCTGioiTinh";
+            this.txtCTGioiTinh.ReadOnly = true;
             this.txtCTGioiTinh.Size = new System.Drawing.Size(144, 20);
             this.txtCTGioiTinh.TabIndex = 13;
             // 
@@ -203,6 +205,7 @@
             this.txtCTNgaySinh.Location = new System.Drawing.Point(176, 232);
             this.txtCTNgaySinh.Margin = new System.Windows.Forms.Padding(2);
             this.txtCTNgaySinh.Name = "txtCTNgaySinh";
+            this.txtCTNgaySinh.ReadOnly = true;
             this.txtCTNgaySinh.Size = new System.Drawing.Size(144, 20);
             this.txtCTNgaySinh.TabIndex = 13;
             // 
@@ -211,6 +214,7 @@
             this.txtCTSdt.Location = new System.Drawing.Point(176, 257);
             this.txtCTSdt.Margin = new System.Windows.Forms.Padding(2);
             this.txtCTSdt.Name = "txtCTSdt";
+            this.txtCTSdt.ReadOnly = true;
             this.txtCTSdt.Size = new System.Drawing.Size(144, 20);
             this.txtCTSdt.TabIndex = 13;
             // 
@@ -219,6 +223,7 @@
             this.txtCTCccd.Location = new System.Drawing.Point(176, 280);
             this.txtCTCccd.Margin = new System.Windows.Forms.Padding(2);
             this.txtCTCccd.Name = "txtCTCccd";
+            this.txtCTCccd.ReadOnly = true;
             this.txtCTCccd.Size = new System.Drawing.Size(144, 20);
             this.txtCTCccd.TabIndex = 13;
             // 
@@ -227,6 +232,7 @@
             this.txtCTChiPhi.Location = new System.Drawing.Point(176, 410);
             this.txtCTChiPhi.Margin = new System.Windows.Forms.Padding(2);
             this.txtCTChiPhi.Name = "txtCTChiPhi";
+            this.txtCTChiPhi.ReadOnly = true;
             this.txtCTChiPhi.Size = new System.Drawing.Size(144, 20);
             this.txtCTChiPhi.TabIndex = 13;
             // 
@@ -235,6 +241,7 @@
             this.rtbCTChiTiet.Location = new System.Drawing.Point(175, 335);
             this.rtbCTChiTiet.Margin = new System.Windows.Forms.Padding(2);
             this.rtbCTChiTiet.Name = "rtbCTChiTiet";
+            this.rtbCTChiTiet.ReadOnly = true;
             this.rtbCTChiTiet.Size = new System.Drawing.Size(145, 63);
             this.rtbCTChiTiet.TabIndex = 14;
             this.rtbCTChiTiet.Text = "";
@@ -254,6 +261,7 @@
             this.txtCTTenBH.Location = new System.Drawing.Point(176, 310);
             this.txtCTTenBH.Margin = new System.Windows.Forms.Padding(2);
             this.txtCTTenBH.Name = "txtCTTenBH";
+            this.txtCTTenBH.ReadOnly = true;
             this.txtCTTenBH.Size = new System.Drawing.Size(144, 20);
             this.txtCTTenBH.TabIndex = 16;
             // 
@@ -272,6 +280,7 @@
             this.txtCTNgayMua.Location = new System.Drawing.Point(176, 434);
             this.txtCTNgayMua.Margin = new System.Windows.Forms.Padding(2);
             this.txtCTNgayMua.Name = "txtCTNgayMua";
+            this.txtCTNgayMua.ReadOnly = true;
             this.txtCTNgayMua.Size = new System.Drawing.Size(144, 20);
             this.txtCTNgayMua.TabIndex = 18;
             // 
